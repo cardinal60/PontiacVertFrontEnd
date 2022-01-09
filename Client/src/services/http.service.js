@@ -115,7 +115,7 @@ const HTTPInterface = {
    * @param {string} category categorie de recette pour le filtre
    * @returns les recettes de la catégorie de recheche
    */
-    async getRecipesByCategory(category) {
+    async getChaptersByCategory(category) {
       if (!category) {
         return this.fetchAllChapters();
     }

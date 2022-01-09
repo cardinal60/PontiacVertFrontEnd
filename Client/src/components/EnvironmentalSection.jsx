@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom"
+import httpService from "../services/http.service";
+import { useState, useEffect } from "react";
 
 function EnvironmentalSection(props) {
+
+    const [chapters, setChapters] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(async () => {
+        setChapters(await httpService.getChaptersByCategory("Environment"));
+        setIsLoading(false);
+      }, []);
     let content = {
         EN: {
           TITLE: "Environment section",
           DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
           TITLE2: "List of chapters",
           BUTTON1: "Return to Green Book",
-          CHAPTERS: [{id: 1, name:"chapter1"},{id: 2, name:"chapter2"},{id: 3, name:"chapter3"},{id: 4, name:"chapter4"},{id: 5, name:"chapter6"},{id: 7, name:"chapter7"}]
 
     
         },
@@ -17,7 +26,6 @@ function EnvironmentalSection(props) {
             DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
             TITLE2: "liste des chapitres",
             BUTTON1: "Retourner au Livre Vert",
-            CHAPTERS: [{id: 1, name:"chapter1"},{id: 2, name:"chapter2"},{id: 3, name:"chapter3"},{id: 4, name:"chapter4"},{id: 5, name:"chapter6"},{id: 7, name:"chapter7"}]
 
     
         }
@@ -38,7 +46,22 @@ function EnvironmentalSection(props) {
                     
 
                     <div className='ChapterContainer'>
-                        {content.CHAPTERS.map((chapter) => <a key={chapter.id} href="https//www.google.com" className='HomeLink '> <p className='HomeButton'>{chapter.name}</p></a>)}
+                        {isLoading ? (
+                            <div className='loaderContainer'>
+                                <p>Loading...</p>
+                            </div>
+                            ) : (
+                        chapters.map((chapter) =>{
+                            if(props.language === "FR"){
+                                return(<a key={chapter.id} href={chapter.FR.url} className='HomeLink '> <p className='HomeButton'>{chapter.FR.name}</p></a>)
+                            }
+
+                            else{
+                                return(<a key={chapter.id} href={chapter.EN.url} className='HomeLink '> <p className='HomeButton'>{chapter.EN.name}</p></a>)
+                            }
+
+                            })
+                        )}
                     </div>
                     <Link to="/greenBook" className="HomeLink ReturnButton smallTopMargin"><p className='HomeButton'>{content.BUTTON1}</p></Link>
                 </div>
