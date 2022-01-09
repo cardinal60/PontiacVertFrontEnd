@@ -1,0 +1,511 @@
+/*
+CSS code for the font
+*/
+
+html, body, #root, .body_container, .BodyContent {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*
+CSS Code for the  Navigation bar (Header)
+*/
+.NavigationMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+  height: 50px;
+}
+
+.NavList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.NavLink {
+  width: 10em;
+  height: 2em;
+  border: 2px solid rgba(19, 15, 14, 0.001);
+  border-radius: 4px;
+  margin-right: 5%;
+  transition: all ease-out 0.2s;
+  text-decoration: none;
+
+}
+
+.NavLink :hover {
+  background-color: #acd44e;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.SiteLogo {
+  width: 4em;
+  height: 4em;
+
+}
+
+.ReactLink {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.LangLink{
+  width: 3em;
+  height: 2em;
+  border: 2px solid rgba(19, 15, 14, 0.001);
+  border-radius: 4px;
+  margin-right: 5%;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.LanguageButton {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: White;
+}
+
+.NavigationContainer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(19, 15, 14, 0.5);
+  z-index: 100;
+}
+
+/*
+ CSS rules for the ImageBanner
+*/
+
+
+.MainImageBanner {
+  height: 20%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.ContentContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainPageImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 700px;
+  min-height: 700px;
+  background-image: url(../public/images/IMAGE_FOND.jpg);
+  background-repeat: no-repeat;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+}
+
+#HomeTitle {
+  color: black;
+  font-size: 2rem;
+  padding-left: 10%;
+}
+
+#HomeTitleDescription {
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 40%;
+}
+
+/*
+CSS rules for the home PAge
+*/
+.DescriptionSite {
+  font-size: 1.35rem;
+  width: 50%;
+  padding-left: 20%;
+  text-align: justify;
+}
+
+.DescriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#ContainerBoutons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.HomeButton {  
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.HomeLink {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 15em;
+  height: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-out 5s;
+  
+  
+}
+
+.HomeLink :hover {
+  background-color: #acd44e;
+  border-radius: 10px;
+  color: white;
+}
+
+/*
+CSS Rules for the footer
+*/
+
+.FooterContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(22, 20, 19, 1);
+}
+
+.FooterNavContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FooterNavContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FooterLinks  {
+  list-style: none;
+  margin-left: 10px;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  font-size: 0.7em;
+
+}
+
+
+.PartnersContainer {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+
+.PartnersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5px;
+  gap: 5px;
+}
+
+.PageContent {
+  flex: 1;
+  background-color: rgba(248,244,241,255);
+  /*background-color: rgba(247,249,248,255);*/
+  
+}
+
+.Footer {
+  flex-shrink: 0;
+}
+
+.BodyContent {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+General CSS rules for all the other pages
+*/
+
+.ImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 300px;
+  min-height: 300px;
+  background-image: url(../public/images/IMAGE_FOND.jpg);
+  background-repeat: no-repeat;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+.ImageBanner {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 1.8em;
+
+}
+
+/*
+CSS Rules for the contact page
+*/
+
+.EmailAddress {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 10pt;
+}
+
+.AdressContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 25%;
+  margin-bottom: 10%;
+
+}
+
+.NoMargin {
+  margin: 0;
+  padding: 0;
+}
+
+.NoBottomMargin {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+/*
+CSS rules for the introduction page
+*/
+
+.IntroductionContent{
+  margin: 10pt 15% 40pt 15%;
+}
+
+.IntroductionParagraph {
+  padding-left: 5%;
+  text-align: justify;
+}
+
+.ReturnButton{
+  margin: 0 auto 40pt auto;
+}
+
+/*
+CSS rules for the About Page
+*/
+
+.AboutContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  text-align: justify;
+
+}
+
+.RepresentativeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10%;
+}
+
+/*
+CSS rules for consultationBox
+*/
+
+.ConsultationBox{
+  margin-bottom: 50px;
+}
+.ClosedBoxContainer {
+  border: 3px outset rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30pt;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.ArrowUp {
+  border: solid rgba(0, 0, 0, 0.5);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.ArrowDown {
+  border: solid rgba(0, 0, 0, 0.5);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.ConsultationBoxContainer {
+  border: 3px outset rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30pt;
+  z-index: 0;
+}
+
+.ConsultationBoxTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px double black;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: auto;
+}
+.ConsultationBoxContent {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  padding-top: 10pt;
+}
+
+.ConsultationBoxDescription {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+
+/*
+CSS rules for Consultation Page
+*/
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ConsultationsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.LeftMargin {
+  margin-left: 10%;
+}
+
+.marginTop {
+  margin-top: 50pt;
+}
+
+
+.ConsultationBoxButton {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 15em;
+  height: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-out 5s;
+  z-index: 50;
+  margin-left: 10%;
+}
+
+.ConsultationBoxButton :hover {
+  background-color: #acd44e;
+  border-radius: 10px;
+  color: white;
+}
+
+.justified {
+  text-align: justify;
+}
+/*
+CSS rules for GreenBook
+*/
+.GreenBookPageImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 700px;
+  min-height: 700px;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+}
+.ImageGreenBook{
+  background-image: url(../public/images/IMAGE_FOND_LIVRE.jpg); 
+  background-repeat: no-repeat;
+}
+.ImageEnvironment {
+  background-image: url(../public/images/Maquette_ENVIRO.jpg);
+  background-repeat: no-repeat;
+}
+
+.ImageSocial {
+  background-image: url(../public/images/Maquette_SOCIAL.jpg);
+  background-repeat: no-repeat;
+}
+.ImageEconomy {
+  background-image: url(../public/images/Maquette_ÉCONOMIE.jpg);
+  background-repeat: no-repeat;
+}
+
+.ChapterContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.ChapterContainer a {
+  margin: 5pt;
+}
+
+.GreenBookImageBanner {
+  height: 20%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+.GreenBookContent{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.smallTopMargin {
+  margin-top: 5pt;
+}
