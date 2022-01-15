@@ -63,7 +63,7 @@ function EnvironmentalSection(props) {
                             })
                         )}
                     </div>
-                    <Link to="/greenBook" className="HomeLink ReturnButton smallTopMargin"><p className='HomeButton'>{content.BUTTON1}</p></Link>
+                    <Link to="/greenBook" className="ReturnButton smallTopMargin"><p className='HomeButton'>{content.BUTTON1}</p></Link>
                 </div>
             </div>
             

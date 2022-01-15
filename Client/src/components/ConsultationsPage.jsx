@@ -39,7 +39,7 @@ function ConsultationsPage(props) {
     return (
         <main className="MainContent">
             <ImageBanner title="Consultations"/>
-            <div className="IntroductionContent">
+            <div className="marginConsultationContent">
                 <h2>{content.T1}</h2>
                 <p>{content.P1}</p>
                 <h2>{content.T2}</h2>
@@ -55,7 +55,7 @@ function ConsultationsPage(props) {
                 </div>
             </div>
 
-            <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON}</p></Link>
+            <Link to="/" className="ReturnButton"><p className='HomeButton'>{content.BUTTON}</p></Link>
 
         </main>
     )

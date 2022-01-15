@@ -6,7 +6,7 @@ function AboutPage(props) {
         EN: {
           TITLE: "About",
           T2: "Description of the initiative",
-          P1: "CD monitores, inclusos tegumenta laptop, optime currunt ad solutionem nativam. Monitorem tuum non debes in hoc proposito currere, sed solet commendari ut textum acutissimum et imagines possibiles curare videas. Monitores LCD plerumque veniunt in duabus formis: vexillum proportio latitudinis ad altitudinem 4:3, vel amplitudinis proportio XVI: 9 vel 16:10. Monitor in widescreen utrumque latiore shsimiae et constantiae quam norma ratio monitoris. CD monitores, inclusos tegumenta laptop, optime currunt ad solutionem nativam. Monitorem tuum non debes in hoc proposito currere, sed solet commendari ut textum acutissimum et imagines possibiles curare videas. Monitores LCD plerumque veniunt in duabus formis: vexillum proportio latitudinis ad altitudinem 4:3, vel amplitudinis proportio XVI: 9 vel 16:10. Monitor in widescreen utrumque latiore shsimiae et constantiae quam norma ratio monitoris.",
+          P1: "",
           T3: "Consult the White Book",
           T4: "The Cost of Inaction",
           BUTTON1: "Consult",
