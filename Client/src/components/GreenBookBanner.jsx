@@ -1,16 +1,20 @@
-
+import SpecialText from "./SpecialText"
 
 function GreenBookBanner(props) {
     let content = {
         EN: {
           TEXTE: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
           LIEN: "More on the subject...",
+          BANNERTITLE: "GREEN",
+          BANNERADJ: "book"
     
         },
     
         FR: {
             TEXTE: "Platforme Climatique municipale est instrumentale pour que la mnuicipalite soit dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
-            LIEN: "En savoir plus..."
+            LIEN: "En savoir plus...",
+            BANNERTITLE: "LIVRE",
+            BANNERADJ: "vert"
     
         }
       }
@@ -21,7 +25,7 @@ function GreenBookBanner(props) {
 
     return (
         <div className="ContentContainer">
-            <img src="../../images/Typo_livre_vert.png" alt=""/>
+            <SpecialText bannerTitle = {content.BANNERTITLE} bannerAdj = {content.BANNERADJ}/>
                 
             <div className='DescriptionContainer'>
                 <p className= "DescriptionSite">{content.TEXTE}</p>

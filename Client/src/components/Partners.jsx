@@ -49,7 +49,7 @@ function Partners(props) {
                     <li>Sophie Chatel</li>
                     <li>Sophie Chatel</li>
                 </ul>
-                <Link to="/" className="HomeLink ReturnButton marginTop"><p className='HomeButton'>{content.BUTTON2}</p></Link>
+                <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON2}</p></Link>
             </div>
             
         </main>

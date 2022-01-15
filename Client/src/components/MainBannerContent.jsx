@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SpecialText from "./SpecialText";
 
 function MainBannerContent(props) {
     let content = {
@@ -21,7 +22,7 @@ function MainBannerContent(props) {
 
     return (
         <div className="ContentContainer">
-            <img src="../../images/Typo_livre_vert.png" alt=""/>
+            <SpecialText className= "marginTop" bannerTitle = {props.bannerTitle} bannerAdj = {props.bannerAdj}/>
                 
             <div className='DescriptionContainer'>
                 <p className= "DescriptionSite">{content.TEXTE}</p>

@@ -42,7 +42,7 @@ const Header = (props) => {
   return (
     <div className="NavigationContainer">
       <nav className= "NavigationMenu">
-        <div className = "SiteLogo"><Link to="/" className = "ReactLink">Logo</Link></div>
+        <div className = "SiteLogo"><Link to="/" className = "ReactLink"><img src="../../images/Logo_Pontiac_vert_transparent.png" className="logo" alt= ""/></Link></div>
           <ul className = "NavList">
         
             <li className = "NavLink"><Link to="/about" className = "ReactLink">{content.ABOUT}</Link></li>
