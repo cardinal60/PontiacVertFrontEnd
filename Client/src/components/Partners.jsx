@@ -7,8 +7,9 @@ function Partners(props) {
     let content = {
         EN: {
           TITLE: "Partners",
-          T1: "An initiative from the regional representatives",
+          T1: "The initiative for a green and prosperous Outaouais is that of the following elected officials, organizations and committed citizens:",
           BUTTON2: "Return to Home Page",
+          Comity: "Committee of regional elected members",
           T2: "And other Partners :",
           CHAMBER: "House of Communs of Canada",
           SOPHIE: "Sophie Chatel, member of Parliament of Pontiac",
@@ -27,8 +28,8 @@ function Partners(props) {
           JANE: "Jane Toller, Prefect de la MRC Pontiac",
           TONY: "Tony Wawatie, chief of the Anishinabe of Kitigan Zibi nation's Council",
           DYLAN: "Dylan Whiteduck, chief of Kitigan Zibi Anishinabeg",
-          COMITE: "Comitees of organisations and Outaouais citizens",
-          ORGANISME: "Parter organisations",
+          COMITE: "Committees of organisations and Outaouais citizens",
+          ORGANISME: "Partner organisations",
           BENOIT: "Benoît Délage, general director",
           PAUL: "Paul Turpin, consultant",
           TOURISM: "Tourism Outaouais",
@@ -58,11 +59,12 @@ function Partners(props) {
     
         FR: {
           TITLE: "Partenaires",
-          T1: "Une initiative des élus et représentants régionaux :",
+          T1: "L’initiative pour un Outaouais vert et prospère est celle des élus, organisations et citoyens engagés suivants :",
           BUTTON2: "Retourner à la page d'acceuil",
           T2: "Et Autres Partenaires :",
+          Comity: "Comité des élus de la région de l’Outaouais",
           CHAMBER: "Chambre des communes du Canada",
-          SOPHIE: ", députée de Pontiac ",
+          SOPHIE: "Sophie Chatel, députée de Pontiac ",
           GREG: "Greg Fergus, député de Hull-Aylmer ",
           STEPHANE: "Stéphane Lauzon, député de Argenteuil—La Petite-Nation",
           STEVEN:"Steven MacKinnon, député de Gatineau",
@@ -115,7 +117,7 @@ function Partners(props) {
             <ImageBanner title= {content.TITLE}/>
             <div className="AboutContainer">
                 <h2>{content.T1}</h2>
-                <h3 className="Padding5">{content.COMITE}</h3>
+                <h3 className="Padding5">{content.Comity}</h3>
                 <h4 className="Padding10">{content.CHAMBER}</h4>
                 <ul className="RepresentativeContainer">
                     <li>{content.SOPHIE}</li>
