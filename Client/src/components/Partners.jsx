@@ -1,5 +1,6 @@
 import ImageBanner from "./ImageBanner"
 import { Link } from "react-router-dom"
+import {useState} from "react"
 
 
 function Partners(props) {
@@ -110,6 +111,41 @@ function Partners(props) {
       ? (content = content.FR)
       : (content = content.EN)
 
+      const [Representative, showRepresentative] = useState("hidden");
+      const [Organisation, showOrganisations] = useState("hidden");
+      const [Repclicked, changeRepBackground] = useState("notRepClicked");
+      const [ORG, changeOrgBackground] = useState("notOrgClicked");
+      let RepClasses = `PartnerList ${Repclicked}`;
+      let OrgClasses = `PartnerList ${ORG}`;
+
+      const handleClick = (name) => {
+        if(name === "representative"){
+          if(Representative === "hidden"){
+            showRepresentative("show")
+            changeRepBackground("Repclicked")
+          }
+          else {
+            showRepresentative("hidden")
+            changeRepBackground("notRepClicked")
+          }
+
+
+        }
+
+        else {
+          if(Organisation === "hidden"){
+            showOrganisations("show")
+            changeOrgBackground("OrgClicked")
+          }
+          else {
+            showOrganisations("hidden")
+            changeOrgBackground("notOrgClicked")
+          }
+          
+
+        }
+      }
+
     
 
     return (
@@ -117,100 +153,107 @@ function Partners(props) {
             <ImageBanner title= {content.TITLE}/>
             <div className="AboutContainer">
                 <h2>{content.T1}</h2>
-                <h3 className="Padding5">{content.Comity}</h3>
-                <h4 className="Padding10">{content.CHAMBER}</h4>
-                <ul className="RepresentativeContainer">
-                    <li>{content.SOPHIE}</li>
-                    <li>{content.GREG}</li>
-                    <li>{content.STEPHANE}</li>
-                    <li>{content.STEVEN}</li>
-                </ul>
-                <h4 className="Padding10">{content.ASSEMBLY}</h4>
-                <ul className="RepresentativeContainer">
-                    <li>{content.ROBERT}</li>
-                    <li>{content.ANDRE}</li>
-                    <li>{content.MARYSE}</li>
-                    <li>{content.MATHIEULE}</li>
-                    <li>{content.MATHIEULA}</li>
-                </ul>
-                <h4 className="Padding10">{content.MUNICIPALITY}</h4>
-                <ul className="RepresentativeContainer">
-                    <li>{content.MARC}</li>
-                    <li>{content.CHANTAL}</li>
-                    <li>{content.JANE}</li>
-                </ul>
-                <h4 className="Padding10">{content.CHEF}</h4>
-                <ul className="RepresentativeContainer">
-                    <li>{content.TONY}</li>
-                    <li>{content.DYLAN}</li>
-                </ul>
-
-                <h4 className="Padding10">Cocoriko</h4>
-                <ul className="RepresentativeContainer">
-                    <li>Sébastien Lemay</li>
-                </ul>
-
-                <h3 className="Padding5">{content.COMITE}</h3>
-                <h4 className="Padding10">{content.ORGANISME}</h4>
-
-                <h5 className="Padding15">CREDDO</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.BENOIT}</li>
-                    <li>{content.PAUL}</li>
-                </ul>
-                <h5 className="Padding15">{content.TOURISM}</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.JULIE}</li>
-                </ul>
-                <h5 className="Padding15">ALUS Outaouais</h5>
-                <ul className="RepresentativeContainer">
-                    <li>Maria José Maezo</li>
-                </ul>
-    
-                <h5 className="Padding15">{content.CHCOM}</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.MIKE}</li>
-                    <li>{content.REMI}</li>
-                </ul>
                 
-                <h5 className="Padding15">ACRE</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.OLAF}</li>
-                </ul>
+                <h3 className={RepClasses} onClick={() => handleClick("representative")}>{content.Comity}</h3>
+                <div className={Representative}>
+                  <h4 className="Padding10">{content.CHAMBER}</h4>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.SOPHIE}</li>
+                      <li>{content.GREG}</li>
+                      <li>{content.STEPHANE}</li>
+                      <li>{content.STEVEN}</li>
+                  </ul>
+                  <h4 className="Padding10">{content.ASSEMBLY}</h4>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.ROBERT}</li>
+                      <li>{content.ANDRE}</li>
+                      <li>{content.MARYSE}</li>
+                      <li>{content.MATHIEULE}</li>
+                      <li>{content.MATHIEULA}</li>
+                  </ul>
+                  <h4 className="Padding10">{content.MUNICIPALITY}</h4>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.MARC}</li>
+                      <li>{content.CHANTAL}</li>
+                      <li>{content.JANE}</li>
+                  </ul>
+                  <h4 className="Padding10">{content.CHEF}</h4>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.TONY}</li>
+                      <li>{content.DYLAN}</li>
+                  </ul>
+                </div>
+
                 
-                <h5 className="Padding15">SADC Pontiac</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.RHONDA}</li>
-                </ul>
-                
-                <h5 className="Padding15">UPA des Collines de l'Outaouais</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.CHERYL}</li>
-                </ul>
 
-                <h5 className="Padding15">UPA Outaouais-Laurentides</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.STEPHANEAL}</li>
-                    <li>Suzanne Laplante</li>
-                </ul>
+                <h3 className={OrgClasses} onClick={() => handleClick("")}>{content.COMITE}</h3>
+                <div className={Organisation}>
+                  <h4 className="Padding10">{content.ORGANISME}</h4>
+                  
+                  <h5 className="Padding15">Cocoriko</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>Sébastien Lemay</li>
+                  </ul>
 
-                <h5 className="Padding15">UPA du Pontiac</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.SCOTT}</li>
-                </ul>
+                  <h5 className="Padding15">CREDDO</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.BENOIT}</li>
+                      <li>{content.PAUL}</li>
+                  </ul>
+                  <h5 className="Padding15">{content.TOURISM}</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.JULIE}</li>
+                  </ul>
+                  <h5 className="Padding15">ALUS Outaouais</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>Maria José Maezo</li>
+                  </ul>
+      
+                  <h5 className="Padding15">{content.CHCOM}</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.MIKE}</li>
+                      <li>{content.REMI}</li>
+                  </ul>
+                  
+                  <h5 className="Padding15">ACRE</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.OLAF}</li>
+                  </ul>
+                  
+                  <h5 className="Padding15">SADC Pontiac</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.RHONDA}</li>
+                  </ul>
+                  
+                  <h5 className="Padding15">UPA des Collines de l'Outaouais</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.CHERYL}</li>
+                  </ul>
 
-                <h5 className="Padding15">UPA Vallée-de-la-Gatineau</h5>
-                <ul className="RepresentativeContainer">
-                    <li>{content.PATRICK}</li>
-                    <li>{content.DANIEL}</li>
-                </ul>
+                  <h5 className="Padding15">UPA Outaouais-Laurentides</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.STEPHANEAL}</li>
+                      <li>Suzanne Laplante</li>
+                  </ul>
 
-                <h4 className="Padding10">{content.CITIZENS}</h4>
-                <ul className="RepresentativeContainer">
-                    <li>{content.SHAUGHN}</li>
-                    <li>{content.CARYL}</li>
-                    <li>{content.FRANCIS}</li>
-                </ul>
+                  <h5 className="Padding15">UPA du Pontiac</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.SCOTT}</li>
+                  </ul>
+
+                  <h5 className="Padding15">UPA Vallée-de-la-Gatineau</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.PATRICK}</li>
+                      <li>{content.DANIEL}</li>
+                  </ul>
+
+                  <h4 className="Padding10">{content.CITIZENS}</h4>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.SHAUGHN}</li>
+                      <li>{content.CARYL}</li>
+                      <li>{content.FRANCIS}</li>
+                  </ul>
+                </div>
 
 
 
