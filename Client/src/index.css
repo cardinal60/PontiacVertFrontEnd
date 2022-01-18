@@ -151,7 +151,7 @@ CSS Code for the  Navigation bar (Header)
   min-height: 700px;
   width: 100%;
   background-image: url(../public/images/IMAGE_FOND.jpg);
-  background-repeat: repeat-x;
+  background-size: cover;
   border-bottom: 10px solid rgba(0, 0, 0, 0.8);
 }
 
@@ -283,6 +283,7 @@ CSS Rules for the footer
   display: flex;
   justify-content: flex-start;
   color: white;
+  visibility: hidden;
 }
 
 .PartnersGrid {
@@ -319,7 +320,7 @@ General CSS rules for all the other pages
   max-height: 300px;
   min-height: 300px;
   background-image: url(../public/images/IMAGE_FOND.jpg);
-  background-repeat: repeat-x;
+  background-size: cover;
   border-bottom: 5px solid rgba(0, 0, 0, 0.8);
 }
 
@@ -570,20 +571,20 @@ CSS rules for GreenBook
 }
 .ImageGreenBook{
   background-image: url(../public/images/IMAGE_FOND_LIVRE.jpg); 
-  background-repeat: repeat-x;
+  background-size: cover;
 }
 .ImageEnvironment {
   background-image: url(../public/images/Maquette_ENVIRO.jpg);
-  background-repeat: repeat-x;
+  background-size: cover;
 }
 
 .ImageSocial {
   background-image: url(../public/images/Maquette_SOCIAL.jpg);
-  background-repeat: repeat-x;
+  background-size: cover;
 }
 .ImageEconomy {
-  background-image: url(../public/images/Maquette_ÉCONOMIE.jpg);
-  background-repeat: repeat-x;
+  background-image: url(../public/images/Maquette_économie_final.jpg);
+  background-size: cover;
 }
 
 .ChapterContainer {
