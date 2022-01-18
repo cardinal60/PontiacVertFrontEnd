@@ -34,14 +34,14 @@ function Footer(props) {
     return (
         <div className='FooterContainer'>
             <div className="FooterNavContainer">
-                <div className = "SiteLogo"><Link to="/" className = "ReactLink"><img src="../../images/Logo_Pontiac_vert_transparent.png" className="logo" alt= ""/></Link></div>
+                <div className = "SiteLogo"><Link to="/" className = "ReactLink"><img src="../../images/LOGO_OUTAOUAIS_FEUILLE_VERTE.png" className="logo" alt= ""/></Link></div>
                 <ul className="FooterLinks">
-                    <Link to="/">{content.LINK1}</Link>
-                    <Link to= "/about">{content.LINK2}</Link>
-                    <Link to= "/consultation">{content.LINK3}</Link>
-                    <Link to= "/contact">{content.LINK4}</Link>
-                    <Link to= "/greenBook">{content.LINK5}</Link>
-                    <Link to= "/partners">{content.LINK6}</Link>
+                    <Link className= "Blue" to="/">{content.LINK1}</Link>
+                    <Link className= "Blue" to= "/about">{content.LINK2}</Link>
+                    <Link className= "Blue" to= "/consultation">{content.LINK3}</Link>
+                    <Link className= "Blue" to= "/contact">{content.LINK4}</Link>
+                    <Link className= "Blue" to= "/greenBook">{content.LINK5}</Link>
+                    <Link className= "Blue" to= "/partners">{content.LINK6}</Link>
                 </ul>
             </div>
             <div className="PartnersContainer">

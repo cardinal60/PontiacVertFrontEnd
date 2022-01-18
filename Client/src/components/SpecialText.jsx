@@ -6,7 +6,7 @@ function SpecialText(props) {
         <div className="noSpace">
             <p className= "AvenirFont">{props.bannerTitle}</p>
             <div className="noSpace">
-                <p className="AvenirFont">{props.bannerAdj}</p>
+                <p className="smallerAvenirFont">{props.bannerFullAdj}</p>
                 <p className= "customShadow">{props.bannerAdj}</p>
             </div>
         </div>

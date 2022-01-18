@@ -8,8 +8,9 @@ function ImageBox(props) {
           BUTTON1: "Participate to round tables",
           BUTTON2: "Consult the consultations",
           BUTTON3: "Read Green Book",
-          BANNERTITLE: "GREEN",
-          BANNERADJ: "outaouais"
+          BANNERTITLE: "OUTAOUAIS",
+          BANNERADJ: "green",
+          BANNERFULLADJ: "green and prosperous"
     
         },
     
@@ -18,7 +19,8 @@ function ImageBox(props) {
             BUTTON2: "Consulter les consultations",
             BUTTON3: "Lire le livre vert",
             BANNERTITLE: "OUTAOUAIS",
-            BANNERADJ: "vert"
+            BANNERADJ: "vert",
+            BANNERFULLADJ: "vert et prospère"
     
         }
       }
@@ -30,15 +32,15 @@ function ImageBox(props) {
     return (
         <div className="MainPageImageContainer">
             <div className="MainImageBanner">
-                <MainBannerContent language = {props.language} bannerTitle = {content.BANNERTITLE} bannerAdj = {content.BANNERADJ}/>
+                <MainBannerContent language = {props.language} bannerTitle = {content.BANNERTITLE} bannerFullAdj = {content.BANNERFULLADJ} bannerAdj = {content.BANNERADJ}/>
 
-                <div id='ContainerBoutons'>
+            </div>
+            <div id='ContainerBoutons'>
                 
                     <a href="https://demo.cocoriko.org/groups/pour-un-pontiac-vert-et-prospere?setLng=en-CA" className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
                     <Link to="/Consultation" className='HomeLink'> <p className='HomeButton'>{content.BUTTON2}</p></Link>
                     <Link to="/greenBook" className='HomeLink'><p className='HomeButton'>{content.BUTTON3}</p></Link>
 
-                </div>
             </div>
             
         </div>

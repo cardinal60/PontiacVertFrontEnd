@@ -6,6 +6,11 @@ html, body, #root, .body_container, .BodyContent {
   height: 100%;
 }
 
+* {
+  color: rgb(50, 50, 50);
+  font-family: "Montserrat";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -61,8 +66,9 @@ CSS Code for the  Navigation bar (Header)
 }
 
 .logo {
-  width: 3em;
-  height: 3em;
+  width: 87.5px;
+  height: 50px;
+  margin-left: 65%;
 }
 
 .ReactLink {
@@ -110,10 +116,25 @@ CSS Code for the  Navigation bar (Header)
 
 
 .MainImageBanner {
+  margin-top: 15%;
   height: 20%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255, 0.6))
 
+}
+
+.GreenMainImageBanner {
+  margin-top: 20%;
+  padding: 5% 0% 5% 0%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255, 0.6))
+
+}
+
+.marginLeft {
+  margin-left: 15%;
 }
 
 .ContentContainer{
@@ -151,27 +172,38 @@ CSS rules for the home PAge
 */
 .DescriptionSite {
   font-size: 1.35rem;
-  width: 50%;
-  padding-left: 20%;
+  width: 80%;
   text-align: justify;
 }
 
 .DescriptionContainer {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #ContainerBoutons{
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
+#GreenContainerBoutons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+
 
 .HomeButton {  
   text-decoration: none;
-  color: black;
+  color: rgba(30, 30, 30, 1);
+  background-color: rgba(200, 231, 128, 0.7);
+  border-radius: 10px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -181,7 +213,7 @@ CSS rules for the home PAge
 }
 
 .HomeLink {
-  border: 2px solid black;
+  border: 2px solid rgba(50, 50, 50, 1);
   border-radius: 10px;
   width: 15em;
   height: 3em;
@@ -199,6 +231,18 @@ CSS rules for the home PAge
   border-radius: 10px;
   color: white;
 }
+.SignatureContainer {
+  margin: 3% 0% 3% 25%;
+}
+
+.RepSignature {
+  font-family: 'Alex Brush';
+  font-size: 35px;
+}
+
+.RepTitle {
+  font-size: 20px;
+}
 
 /*
 CSS Rules for the footer
@@ -215,6 +259,10 @@ CSS Rules for the footer
   justify-content: flex-start;
 }
 
+.Blue {
+  color: rgb(43, 43, 230);
+}
+
 .FooterNavContainer {
   display: flex;
   justify-content: flex-start;
@@ -228,7 +276,6 @@ CSS Rules for the footer
   grid-template-columns: 1fr;
   gap: 5px;
   font-size: 0.7em;
-
 }
 
 
@@ -478,8 +525,8 @@ CSS rules for Consultation Page
     padding: 1rem 3rem;
   }
 }
-.LeftMargin {
-  margin-left: 10%;
+.RightMargin {
+  margin-right: 10%;
 }
 
 .marginTop {
@@ -601,12 +648,20 @@ CSS rules for Text with special Font
   color: rgba(86,82,51,255);
 }
 
+.smallerAvenirFont {
+  font-family: "Montserrat";
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  color: rgba(86,82,51,255);
+}
+
 .customShadow {
   margin: 0px;
   padding: 0px;
   position: relative;
-  left: 40px;
-  top: -90px;
+  left: 30px;
+  top: -70px;
   font-size: 125px;
   z-index: -1;
   color: rgba(153,161,99,255);
@@ -616,7 +671,7 @@ CSS rules for Text with special Font
 
 .noSpace {
   position: relative;
-  top: -25px;
+  top: -15px;
   left: 20px;
   margin: 0px;
   padding: 0px;
@@ -636,7 +691,6 @@ CSS Media Query rules
   .ConsultationsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 20pt;
     column-gap: 5%;
   }
 
@@ -679,6 +733,14 @@ CSS Media Query rules
     color: rgba(86,82,51,255);
   }
 
+  .GreenMainImageBanner{
+    padding: 0px;
+  }
+
+  .RightMargin {
+    margin-right: 0%;
+  }
+
   .PartnerList {
     font-size: medium;
     width: 15em;
@@ -707,10 +769,13 @@ CSS Media Query rules
     height: 50px;
   }
 
+  
+
   .ContentContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     margin-top: 10%;
   }
   #ContainerBoutons {
@@ -735,11 +800,15 @@ CSS Media Query rules
 @media screen and (max-width: 550px) and (min-width: 100px) {
 
   .NavLink, .HomeLink {
-    width: 2.5em;
+    width: 4em;
   }
   .LangLink {
     min-width: 1.5em;
     max-height: 1.5em;
+  }
+
+  .LeftMargin {
+    margin-left: 0%;
   }
 
   .ReactLink, .HomeButton, .LanguageButton {
@@ -748,7 +817,16 @@ CSS Media Query rules
 
   .DescriptionSite {
     font-size: 10px;
+    margin: 0% 10%;
 
+  }
+
+  .RepSignature {
+    font-size: 17.5px;
+  }
+  
+  .RepTitle {
+    font-size: 10px;
   }
 
   .NavList, .NavigationMenu {

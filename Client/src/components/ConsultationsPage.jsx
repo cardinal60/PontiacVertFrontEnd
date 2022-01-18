@@ -38,7 +38,7 @@ function ConsultationsPage(props) {
       : (content = content.FR)
     return (
         <main className="MainContent">
-            <ImageBanner title="Consultations"/>
+            <ImageBanner title="CONSULTATIONS"/>
             <div className="marginConsultationContent">
                 <h2>{content.T1}</h2>
                 <p>{content.P1}</p>

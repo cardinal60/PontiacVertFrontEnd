@@ -4,7 +4,6 @@ import HomePage from "./components/HomePage.jsx";
 import Footer from "./components/Footer.jsx";
 import ContactPage from "./components/ContactPage.jsx";
 import AboutPage from "./components/AboutPage.jsx";
-import IntroductionPage from "./components/IntroductionPage.jsx";
 import ConsultationsPage from "./components/ConsultationsPage.jsx";
 import GreenBookPage from "./components/GreenBookPage.jsx";
 import React, { useState } from "react";
@@ -32,7 +31,6 @@ const App = () => {
                             <Route exact path="/" element= {<HomePage language = {language}/>}/>
                             <Route exact path="/contact" element= {<ContactPage language = {language}/>}/> 
                             <Route path="/about" element= {<AboutPage language = {language}/>}/>
-                            <Route exact path="/introduction" element= {<IntroductionPage language = {language}/>}/>
                             <Route path="/consultation" element= {<ConsultationsPage language = {language}/>}/>
                             <Route path="/greenBook" element= {<GreenBookPage language = {language}/>}/>
                             <Route path="/partners" element= {<Partners language = {language}/>}/>

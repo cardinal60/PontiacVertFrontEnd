@@ -7,7 +7,7 @@ function Partners(props) {
 
     let content = {
         EN: {
-          TITLE: "Partners",
+          TITLE: "PARTNERS",
           T1: "The initiative for a green and prosperous Outaouais is that of the following elected officials, organizations and committed citizens:",
           BUTTON2: "Return to Home Page",
           Comity: "Committee of regional elected members",
@@ -59,7 +59,7 @@ function Partners(props) {
         },
     
         FR: {
-          TITLE: "Partenaires",
+          TITLE: "PARTENAIRES",
           T1: "L’initiative pour un Outaouais vert et prospère est celle des élus, organisations et citoyens engagés suivants :",
           BUTTON2: "Retourner à la page d'acceuil",
           T2: "Et Autres Partenaires :",

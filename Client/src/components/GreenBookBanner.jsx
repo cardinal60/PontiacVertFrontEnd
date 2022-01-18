@@ -6,7 +6,8 @@ function GreenBookBanner(props) {
           TEXTE: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
           LIEN: "More on the subject...",
           BANNERTITLE: "GREEN",
-          BANNERADJ: "book"
+          BANNERADJ: "book",
+          BANNERFULLADJ: "book"
     
         },
     
@@ -14,7 +15,8 @@ function GreenBookBanner(props) {
             TEXTE: "Platforme Climatique municipale est instrumentale pour que la mnuicipalite soit dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
             LIEN: "En savoir plus...",
             BANNERTITLE: "LIVRE",
-            BANNERADJ: "vert"
+            BANNERADJ: "vert",
+            BANNERFULLADJ: "vert"
     
         }
       }
@@ -25,7 +27,7 @@ function GreenBookBanner(props) {
 
     return (
         <div className="ContentContainer">
-            <SpecialText bannerTitle = {content.BANNERTITLE} bannerAdj = {content.BANNERADJ}/>
+            <SpecialText bannerTitle = {content.BANNERTITLE} bannerAdj = {content.BANNERADJ} bannerFullAdj = {content.BANNERFULLADJ}/>
                 
             <div className='DescriptionContainer'>
                 <p className= "DescriptionSite">{content.TEXTE}</p>

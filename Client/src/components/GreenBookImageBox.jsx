@@ -24,15 +24,16 @@ function GreenBookImageBox(props) {
 
     return (
         <div className="GreenBookPageImageContainer ImageGreenBook">
-            <div className="MainImageBanner">
+            <div className="GreenMainImageBanner">
                 <GreenBookBanner language = {props.language}/>
 
-                <div id='ContainerBoutons'>
-                <Link to="/greenBook/environment" className='HomeLink'> <p className='HomeButton'>{content.BUTTON1}</p></Link>
-                    <Link to="/greenBook/economy" className='HomeLink'> <p className='HomeButton'>{content.BUTTON2}</p></Link>
-                    <Link to="/greenBook/social" className='HomeLink'><p className='HomeButton'>{content.BUTTON3}</p></Link>
+                
+            </div>
+            <div id='GreenContainerBoutons'>
+              <Link to="/greenBook/environment" className='HomeLink'> <p className='HomeButton'>{content.BUTTON1}</p></Link>
+              <Link to="/greenBook/economy" className='HomeLink'> <p className='HomeButton'>{content.BUTTON2}</p></Link>
+              <Link to="/greenBook/social" className='HomeLink'><p className='HomeButton'>{content.BUTTON3}</p></Link>
 
-                </div>
             </div>
             
         </div>

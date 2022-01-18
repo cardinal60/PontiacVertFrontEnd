@@ -5,7 +5,7 @@ function ContactPage(props) {
 
     return (
         <main className="MainContent">
-            <ImageBanner title= "Contact"/>
+            <ImageBanner title= "CONTACT"/>
 
             <div className="EmailAddress">
                 <strong>email adress: </strong> sophie.chatel@parl.gc.ca
