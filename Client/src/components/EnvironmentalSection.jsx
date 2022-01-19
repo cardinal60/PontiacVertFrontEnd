@@ -41,19 +41,19 @@ function EnvironmentalSection(props) {
                 <div className="GreenBookContent">
                     <h2 className="centered">{content.TITLE}</h2>
                     <p className="justified">{content.DESCRIPTION}</p>
-                    <h2>{content.TITLE2}</h2>
-
                     
-
-                    <div className='ChapterContainer'>
-                        {isLoading ? (
+                </div>
+            </div>
+            <div className="GreenBookBottom">
+                <div className='ChapterContainer'>
+                    {isLoading ? (
                             <div className='loaderContainer'>
                                 <p>Loading...</p>
                             </div>
                             ) : (
                         chapters.map((chapter) =>{
                             if(props.language === "FR"){
-                                return(<a key={chapter.id} href={chapter.FR.url} className='HomeLink '> <p className='HomeButton'>{chapter.FR.name}</p></a>)
+                                return (<a key={chapter.id} href={chapter.FR.url} className='HomeLink '> <p className='HomeButton'>{chapter.FR.name}</p></a>)
                             }
 
                             else{
@@ -64,7 +64,6 @@ function EnvironmentalSection(props) {
                         )}
                     </div>
                     <Link to="/greenBook" className="ReturnButton smallTopMargin"><p className='HomeButton'>{content.BUTTON1}</p></Link>
-                </div>
             </div>
             
         </div>

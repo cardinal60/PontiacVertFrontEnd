@@ -15,7 +15,7 @@ function EconomyContent(props) {
       
     let content = {
         EN: {
-          TITLE: "Economy section",
+          TITLE: "Economy",
           DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
           TITLE2: "List of chapters",
           BUTTON1: "Return to Green Book",
@@ -24,7 +24,7 @@ function EconomyContent(props) {
         },
     
         FR: {
-            TITLE: "Volet Economique",
+            TITLE: "Economie",
             DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
             TITLE2: "liste des chapitres",
             BUTTON1: "Retourner au livre Vert",
@@ -42,12 +42,13 @@ function EconomyContent(props) {
             <div className="GreenBookImageBanner">
                 <div className="GreenBookContent">
                     <h2 className="centered">{content.TITLE}</h2>
-                    <p className="justified">{content.DESCRIPTION}</p>
-                    <h2>{content.TITLE2}</h2>
+                    <p className="justified">{content.DESCRIPTION}</p>          
+                </div>
 
-                    
-
-                    <div className='ChapterContainer'>
+               
+            </div> 
+            <div className="GreenBookBottom">
+                <div className='ChapterContainer'>
                     {isLoading ? (
                             <div className='loaderContainer'>
                                 <p>Loading...</p>
@@ -66,7 +67,6 @@ function EconomyContent(props) {
                         )}
                     </div>
                     <Link to="/greenBook" className="ReturnButton smallTopMargin"><p className='HomeButton'>{content.BUTTON1}</p></Link>
-                </div>
             </div>
             
         </div>

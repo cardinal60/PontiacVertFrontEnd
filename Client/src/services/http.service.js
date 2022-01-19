@@ -1,9 +1,14 @@
 /* eslint-disable no-console */
 const HTTPInterface = {
-    SERVER_URL: 'http://localhost:5000/api',
+    SERVER_URL: 'https://pontiac-vert.herokuapp.com/api',
   
     async GET(endpoint) {
       const response = await fetch(`${this.SERVER_URL}/${endpoint}`);
+      return response.json();
+    },
+
+    async IP(){
+      const response = await fetch("https://api.ipify.org/?format=json");
       return response.json();
     },
   
@@ -39,6 +44,18 @@ const HTTPInterface = {
       this.chapters = [];
       this.consultationsBaseURL = 'consultations';
       this.chaptersBaseUrl = 'chapters';
+    }
+    /**
+     * Fait une requête GET pour recevoir IP du client
+     * @returns
+     */
+    async getIp() {
+      try {
+        return await HTTPInterface.IP();
+      } catch {
+        return "0.0.0.0.15";
+      }
+
     }
   
     /**

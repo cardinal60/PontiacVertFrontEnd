@@ -4,11 +4,12 @@ const { dbService } = require('./services/database.service');
 const { ConsultationController } = require('./Controllers/consultations.controller');
 const {ChaptersController} = require('./Controllers/chapters.controller');
 
-const PORT = 5000;
+const PORTS = process.env.PORT;
 const app = express();
 const SIZE_LIMIT = '50mb';
 const consultationController = new ConsultationController();
 const chaptersController = new ChaptersController();
+require('dotenv').config();
 
 /**
  * Initialiser les différents middlewares et routes
@@ -33,10 +34,10 @@ app.use('/api/chapters', chaptersController.router);
 /**
  * Se produit lorsque le serveur commence à écouter sur le port.
  */
-const server = app.listen(PORT, () => {
+const server = app.listen(PORTS || 5000, () => {
   dbService.connectToServer().then(() => {
     // eslint-disable-next-line no-console
-    console.log(`Listening on port ${PORT}.`);
+    console.log(`Listening on port ${PORTS}.`);
     consultationController.ConsultationService.populateDb();
     chaptersController.ChaptersService.populateDb();
   });

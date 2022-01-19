@@ -41,18 +41,18 @@ function AboutPage(props) {
     return (
         <main className="MainContent">
             <ImageBanner title= {content.TITLE}/>
-            <div className="AboutContainer">
-                <h2>{content.T2}</h2>
-                <p className="IntroductionParagraph">{content.P2}</p>
-                <p className="IntroductionParagraph">{content.P3}</p>
-                <p className="IntroductionParagraph">{content.P4}</p>
-                <h2>{content.T4}</h2>
-                <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
-                <h2>{content.T3}</h2>
-                <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
+              <div className="AboutContainer">
+                  <h2>{content.T2}</h2>
+                  <p className="IntroductionParagraph">{content.P2}</p>
+                  <p className="IntroductionParagraph">{content.P3}</p>
+                  <p className="IntroductionParagraph">{content.P4}</p>
+                  <h2>{content.T4}</h2>
+                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
+                  <h2>{content.T3}</h2>
+                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
 
-            </div>
-            <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON2}</p></Link>
+              </div>
+              <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON2}</p></Link>
         </main>
     )
 }
