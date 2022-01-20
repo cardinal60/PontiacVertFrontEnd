@@ -8,7 +8,7 @@ const Header = (props) => {
       CONSULTATIONS: "CONSULTATIONS",
       CONTACT: "CONTACT",
       GREENBOOK: "GREENBOOK",
-      PARTNERS: "PARTNERS",
+      PARTNERS: "PARTICIPANTS",
       LANG: "Fr"
 
     },
@@ -18,7 +18,7 @@ const Header = (props) => {
       CONSULTATIONS: "CONSULTATIONS",
       CONTACT: "CONTACT",
       GREENBOOK: "LIVREVERT",
-      PARTNERS: "PARTENAIRES",
+      PARTNERS: "PARTICIPANTS",
       LANG: "En"
 
     }
@@ -49,7 +49,7 @@ const Header = (props) => {
             <li className = "NavLink"><Link to="/consultation" className = "ReactLink">{content.CONSULTATIONS}</Link></li>
             <li className = "NavLink PhoneRemove"><Link to="/contact" className = "ReactLink">{content.CONTACT}</Link></li>
             <li className = "NavLink"><Link to="/greenBook" className = "ReactLink">{content.GREENBOOK}</Link></li>
-            <li className = "NavLink"><Link to="/partners" className = "ReactLink">{content.PARTNERS}</Link></li>
+            <li className = "NavLink"><Link to="/participants" className = "ReactLink">{content.PARTNERS}</Link></li>
             <li className="LangLink" onClick={e =>props.switchLanguage()}><span className="LanguageButton">{content.LANG}</span></li>
         </ul>
       </nav>

@@ -7,7 +7,7 @@ function Partners(props) {
 
     let content = {
         EN: {
-          TITLE: "PARTNERS",
+          TITLE: "PARTICIPANTS",
           T1: "The initiative for a green and prosperous Outaouais is that of the following elected officials, organizations and committed citizens:",
           BUTTON2: "Return to Home Page",
           Comity: "Committee of regional elected members",
@@ -19,15 +19,15 @@ function Partners(props) {
           STEVEN:"Steven MacKinnon member of Parliament of Gatineau",
           ASSEMBLY: "National Assembly",
           ROBERT: "Robert Bussière MNA of Gatineau",
-          ANDRE: "André Fortin, Pontiac representative ",
-          MARYSE: "Maryse Gaudreault, Hull representative",
+          ANDRE: "André Fortin, MNA of Pontiac",
+          MARYSE: "Maryse Gaudreault, MNA of Hull",
           MATHIEULE: "Mathieu Lévesque, Chapleau representative",
           MATHIEULA: "Mathieu Lacombe, Papineau representative",
           MUNICIPALITY: "regional Municipalities of Region",
-          MARC: "Marc Carrière, Prefect of MRC des Collines ",
-          CHANTAL: "Chantal Lamarche, Prefect MRC of Vallée-de-la-Gatineau",
-          JANE: "Jane Toller, Prefect de la MRC Pontiac",
-          TONY: "Tony Wawatie, chief of the Anishinabe of Kitigan Zibi nation's Council",
+          MARC: "Marc Carrière, Warden of MRC des Collines",
+          CHANTAL: "Chantal Lamarche, Warden MRC of Vallée-de-la-Gatineau",
+          JANE: "Jane Toller, Warden de la MRC Pontiac",
+          TONY: "Tony Wawatie, Chief of the Algonquins of Barriere Lake",
           DYLAN: "Dylan Whiteduck, chief of Kitigan Zibi Anishinabeg",
           COMITE: "Organisations and citizens",
           ORGANISME: "Partner organisations",
@@ -59,7 +59,7 @@ function Partners(props) {
         },
     
         FR: {
-          TITLE: "PARTENAIRES",
+          TITLE: "PARTICIPANTS",
           T1: "L’initiative pour un Outaouais vert et prospère est celle des élus, organisations et citoyens engagés suivants :",
           BUTTON2: "Retourner à la page d'acceuil",
           T2: "Et Autres Partenaires :",
@@ -79,7 +79,7 @@ function Partners(props) {
           MARC: "Marc Carrière, Préfet de la MRC des Collines ",
           CHANTAL: "Chantal Lamarche, Préfète MRC de la Vallée-de-la-Gatineau",
           JANE: "Jane Toller, Préfète de la MRC Pontiac",
-          TONY: "Tony Wawatie, Chef du conseil de la Nation Anishinabe de Kitigan Zibi",
+          TONY: "Tony Wawatie, Chef des Algonquins du Barriere Lake",
           DYLAN: "Dylan Whiteduck, Chef Kitigan Zibi Anishinabeg",
           COMITE: "Organismes et citoyens",
           ORGANISME: "Organismes partenaires",

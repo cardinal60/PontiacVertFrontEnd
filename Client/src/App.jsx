@@ -50,7 +50,7 @@ const App = () => {
                                 <Route path="/about" element= {<AboutPage language = {language}/>}/>
                                 <Route path="/consultation" element= {<ConsultationsPage language = {language}/>}/>
                                 <Route path="/greenBook" element= {<GreenBookPage language = {language}/>}/>
-                                <Route path="/partners" element= {<Partners language = {language}/>}/>
+                                <Route path="/participants" element= {<Partners language = {language}/>}/>
                                 <Route path="/greenBook/environment" element= {<EnvironmentalSection language = {language}/>}/>
                                 <Route path="/greenBook/social" element= {<SocialPage language = {language}/>}/>
                                 <Route path="/greenBook/economy" element= {<EconomyPage language = {language}/>}/>
