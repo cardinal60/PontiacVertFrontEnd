@@ -46,7 +46,7 @@ function ConsultationsPage(props) {
                 <div className="ConsultationsContainer">
                 {isLoading ? (
               <div className='loaderContainer'>
-                  <p>Loading...</p>
+                  <p>Loading....</p>
               </div>
                 ) : (
                 consultations.map((consultation) => <ConsultationBox className="ConsultationBox" key = {consultation.id} consultation= {consultation} language= {props.language}/>)
