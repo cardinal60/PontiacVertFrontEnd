@@ -13,8 +13,9 @@ function AboutPage(props) {
           T3: "Consult the White Book",
           T4: "The Cost of Inaction",
           BUTTON1: "Consult",
-          BUTTON2: "Return to Home Page",
-          URL: "https://sophiechatel.libparl.ca/2021/11/21/47/"
+          BUTTON2: "To come",
+          BUTTON3: "Return to Home Page",
+          URL: "https://sophiechatel.libparl.ca/2021/11/21/47/?lang=en"
     
         },
     
@@ -28,8 +29,9 @@ function AboutPage(props) {
           P4: "L'objectif du processus de consultation est d'exploiter l'ingéniosité et l'expertise des principaux dirigeants, entrepreneurs et organismes communautaires. Nous organiserons des tables rondes au cours du premier semestre 2022 autour de thèmes allant des énergies vertes aux soins de santé, en passant par les transports collectifs ou actifs, et la préservation de la nature ; tous essentiels à une prospérité durable. Il faut tout un village pour construire un avenir meilleur. Par conséquent, vous êtes invités à participer via la plateforme Cocoriko, soit en commentant, soit en présentant vos propres propositions innovantes.",
             
           BUTTON1: "Consulter",
-          BUTTON2: "Retourner à la page d'acceuil",
-          URL: "https://sophiechatel.libparl.ca/2021/11/21/42/?lang=en"
+          BUTTON2: "À venir",
+          BUTTON3: "Retourner à la page d'acceuil",
+          URL: "https://sophiechatel.libparl.ca/2021/11/21/42/"
     
         }
       }
@@ -47,12 +49,12 @@ function AboutPage(props) {
                   <p className="IntroductionParagraph">{content.P3}</p>
                   <p className="IntroductionParagraph">{content.P4}</p>
                   <h2>{content.T4}</h2>
-                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
+                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON2}</p></a>
                   <h2>{content.T3}</h2>
                   <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
 
               </div>
-              <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON2}</p></Link>
+              <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON3}</p></Link>
         </main>
     )
 }

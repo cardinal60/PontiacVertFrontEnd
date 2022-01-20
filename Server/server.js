@@ -37,7 +37,7 @@ app.use('/api/chapters', chaptersController.router);
 const server = app.listen(PORTS || 5000, () => {
   dbService.connectToServer().then(() => {
     // eslint-disable-next-line no-console
-    console.log(`Listening on port ${PORTS}.`);
+    console.log(`Listening on port ${5000}.`);
     consultationController.ConsultationService.populateDb();
     chaptersController.ChaptersService.populateDb();
   });

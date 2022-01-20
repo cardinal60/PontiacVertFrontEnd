@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SpecialText from "./SpecialText";
 
 function MainBannerContent(props) {
@@ -11,7 +10,7 @@ function MainBannerContent(props) {
         },
     
         FR: {
-            TEXTE: "Bienvenue sur le site Outaouais vert! L’initiative Pour un Outaouais (Pontiac) vert et prospère que j’ai lancée en 2021 s’est transformée en un effort collectif de vos élus de l’Outaouais (fédéraux, provinciaux, MRC et municipaux), le CREDDO, association d’agriculteurs et d’entrepreneurs, organismes communautaires, experts et citoyens engagés, afin de proposer des solutions et créer, ensemble, un Outaouais vert et prospère d'ici 2040. C’est une initiative ambitieuse, mais comme le disait si bien Nelson Mandela « ça semble impossible jusqu’à ce soit fait ! ». ",
+            TEXTE: "Bienvenue sur le site Outaouais vert! L’initiative Pour un Outaouais (Pontiac) vert et prospère que j’ai lancée en 2021 s’est transformée en un effort collectif de vos élus de l’Outaouais (fédéraux, provinciaux, MRC et municipaux), le CREDDO, associations d’agriculteurs et d’entrepreneurs, organismes communautaires, experts et citoyens engagés, afin de proposer des solutions et créer, ensemble, un Outaouais vert et prospère d'ici 2040. C’est une initiative ambitieuse, mais comme le disait si bien Nelson Mandela « ça semble impossible jusqu’à ce soit fait ! ». ",
             LIEN: "En savoir plus...",
             REPTITLE: "       |       DÉPUTÉE DE PONTIAC"
     

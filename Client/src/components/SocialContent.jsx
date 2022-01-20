@@ -15,7 +15,7 @@ function SocialContent(props) {
     let content = {
         EN: {
           TITLE: "Social section",
-          DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
+          DESCRIPTION: "The Social dimension of a green and prosperous future encompasses a framework to ensure that all investments meet the most pressing needs of local communities, that the costs and benefits of future growth are equitably distributed and that the most vulnerable and marginalized enhance their security.",
           TITLE2: "List of chapters",
           BUTTON1: "Return to the Green Book",
     
@@ -23,7 +23,7 @@ function SocialContent(props) {
     
         FR: {
             TITLE: "Volet Social",
-            DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
+            DESCRIPTION: "La dimension sociale d'un avenir vert et prospère englobe un cadre visant à garantir que tous les investissements répondent aux besoins les plus urgents des communautés locales, que les coûts et les avantages de la croissance future sont équitablement répartis et que les plus vulnérables et les plus marginalisés renforcent leur sécurité.",
             TITLE2: "liste des chapitres",
             BUTTON1: "Retourner au Livre Vert",
 

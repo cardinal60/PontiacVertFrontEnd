@@ -15,17 +15,18 @@ import httpService from "./services/http.service.js";
 const App = () => {
     
     const [language, setLanguage] = useState("FR");
-    const [validIP, setIP] = useState(false);
-    const [isLoading, setLoad] = useState(true);
+    /*const [validIP, setIP] = useState(false);
+    const [isLoading, setLoad] = useState(true);*/
     const [IP, SETIP] = useState("");
 
     useEffect(async () => {
         const ip = await httpService.getIp();
-        
-        if(ip.ip ==="173.177.110.10" || ip.ip === "137.175.191.158"){
+        /*
+        if(ip.ip ==="173.177.110.10" || ip.ip === "52.60.169.78"){
             setIP(true);
         }
         setLoad(false);
+        */
         SETIP(ip.ip);
       }, []);
 
@@ -37,9 +38,7 @@ const App = () => {
     }
     
         return (
-            isLoading ? ( <p>Loading...</p>) : (
 
-            validIP ? (
             <div className = "body_container">
                 <Router >
                     <div className= "BodyContent">
@@ -63,9 +62,8 @@ const App = () => {
                 </Router>
                 
             </div>
-            ) : ( <p>{IP}</p>)
+    
             
-            )
         )
     
 }

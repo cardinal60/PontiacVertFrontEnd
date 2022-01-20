@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const HTTPInterface = {
     SERVER_URL: 'https://pontiac-vert.herokuapp.com/api',
   

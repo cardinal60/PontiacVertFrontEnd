@@ -29,7 +29,7 @@ function Partners(props) {
           JANE: "Jane Toller, Prefect de la MRC Pontiac",
           TONY: "Tony Wawatie, chief of the Anishinabe of Kitigan Zibi nation's Council",
           DYLAN: "Dylan Whiteduck, chief of Kitigan Zibi Anishinabeg",
-          COMITE: "Committees of organisations and Outaouais citizens",
+          COMITE: "Organisations and citizens",
           ORGANISME: "Partner organisations",
           BENOIT: "Benoît Délage, general director",
           PAUL: "Paul Turpin, consultant",
@@ -38,7 +38,7 @@ function Partners(props) {
           CHCOM: "Chamber of Commerce de la Vallée-de-la-Gatineau",
           MIKE: "Mike McConnery, president ",
           REMI: "Rémi Lafond, general director",
-          OLAF: "Olaf Jensen, directorr ",
+          OLAF: "Olaf Jensen, director",
           RHONDA: "Rhonda Perry, general director",
           CHERYL: "Cheryl Layer, president ",
           STEPHANEAL: "Stéphane Alary, president",
@@ -46,7 +46,7 @@ function Partners(props) {
           PATRICK: "Patrick Sullivan, president",
           DANIEL: "Daniel Patry, vice-president",
           CITIZENS: "Engaged Citizens",
-          SHAUGHN: "Shaughn McArthur, Climate and social policy advocate",
+          SHAUGHN: "Shaughn McArthur, climate and social policy advocate",
           CARYL: "Caryl Green, former warden of the MRC des Collines and former mayor of Chelsea, advisor to the office of the Member of Parliament for Pontiac",
           FRANCIS: "Francis Beausoleil, Municipal Councilor of La Pêche and Special Assistant to the Member of Parliament for Pontiac ",
           CHEF: "Aboriginal Chief",
@@ -81,7 +81,7 @@ function Partners(props) {
           JANE: "Jane Toller, Préfète de la MRC Pontiac",
           TONY: "Tony Wawatie, Chef du conseil de la Nation Anishinabe de Kitigan Zibi",
           DYLAN: "Dylan Whiteduck, Chef Kitigan Zibi Anishinabeg",
-          COMITE: "Comité des organismes et citoyens de l’Outaouais",
+          COMITE: "Organismes et citoyens",
           ORGANISME: "Organismes partenaires",
           BENOIT: "Benoît Délage, directeur général",
           PAUL: "Paul Turpin, consultant",
@@ -98,7 +98,7 @@ function Partners(props) {
           PATRICK: "Patrick Sullivan, président",
           DANIEL: "Daniel Patry, vice-président",
           CITIZENS: "Citoyens engagés",
-          SHAUGHN: "Shaughn McArthur, Défenseur des politiques climatiques et sociales ",
+          SHAUGHN: "Shaughn McArthur, défenseur des politiques climatiques et sociales ",
           CARYL: "Caryl Green, ancienne préfète de la MRC des Collines et ancienne mairesse de Chelsea, conseillère au bureau de la députée de Pontiac",
           FRANCIS: "Francis Beausoleil, conseillé municipal de La Pêche et adjoint spécial de la députée de Pontiac",
           CHEF: "Chef autochtones"
@@ -168,8 +168,6 @@ function Partners(props) {
                       <li>{content.ROBERT}</li>
                       <li>{content.ANDRE}</li>
                       <li>{content.MARYSE}</li>
-                      <li>{content.MATHIEULE}</li>
-                      <li>{content.MATHIEULA}</li>
                   </ul>
                   <h4 className="Padding10">{content.MUNICIPALITY}</h4>
                   <ul className="RepresentativeContainer">
@@ -190,6 +188,22 @@ function Partners(props) {
                 <div className={Organisation}>
                   <h4 className="Padding10">{content.ORGANISME}</h4>
                   
+                  <h5 className="Padding15">ALUS Outaouais</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>Maria José Maezo</li>
+                  </ul>
+
+                  <h5 className="Padding15">ACRE</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.OLAF}</li>
+                  </ul>
+
+                  <h5 className="Padding15">{content.CHCOM}</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.MIKE}</li>
+                      <li>{content.REMI}</li>
+                  </ul>
+
                   <h5 className="Padding15">Cocoriko</h5>
                   <ul className="RepresentativeContainer">
                       <li>Sébastien Lemay</li>
@@ -200,31 +214,16 @@ function Partners(props) {
                       <li>{content.BENOIT}</li>
                       <li>{content.PAUL}</li>
                   </ul>
-                  <h5 className="Padding15">{content.TOURISM}</h5>
-                  <ul className="RepresentativeContainer">
-                      <li>{content.JULIE}</li>
-                  </ul>
-                  <h5 className="Padding15">ALUS Outaouais</h5>
-                  <ul className="RepresentativeContainer">
-                      <li>Maria José Maezo</li>
-                  </ul>
-      
-                  <h5 className="Padding15">{content.CHCOM}</h5>
-                  <ul className="RepresentativeContainer">
-                      <li>{content.MIKE}</li>
-                      <li>{content.REMI}</li>
-                  </ul>
-                  
-                  <h5 className="Padding15">ACRE</h5>
-                  <ul className="RepresentativeContainer">
-                      <li>{content.OLAF}</li>
-                  </ul>
                   
                   <h5 className="Padding15">SADC Pontiac</h5>
                   <ul className="RepresentativeContainer">
                       <li>{content.RHONDA}</li>
                   </ul>
                   
+                  <h5 className="Padding15">{content.TOURISM}</h5>
+                  <ul className="RepresentativeContainer">
+                      <li>{content.JULIE}</li>
+                  </ul>
                   <h5 className="Padding15">UPA des Collines de l'Outaouais</h5>
                   <ul className="RepresentativeContainer">
                       <li>{content.CHERYL}</li>
@@ -250,8 +249,6 @@ function Partners(props) {
                   <h4 className="Padding10">{content.CITIZENS}</h4>
                   <ul className="RepresentativeContainer">
                       <li>{content.SHAUGHN}</li>
-                      <li>{content.CARYL}</li>
-                      <li>{content.FRANCIS}</li>
                   </ul>
                 </div>
 

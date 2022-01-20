@@ -10,7 +10,7 @@ function Footer(props) {
          LINK4: "Contact",
          LINK5: "Green Book",
          LINK6: "Partners",
-         PARTNERS: "Partners :"
+         PARTNERS: "Thanks to Vincent Boogaart for the programming and design of this website and to Sheila Martineau for the graphic design"
     
         },
     
@@ -21,7 +21,7 @@ function Footer(props) {
             LINK4: "Contact",
             LINK5: "Livre Vert",
             LINK6: "Partenaires",
-            PARTNERS: "Partenaires :"
+            PARTNERS: "Remerciements à Vincent Boogaart pour la programmation et conception du site et à Sheila Martineau pour le design graphique"
     
     
         }
@@ -45,13 +45,7 @@ function Footer(props) {
                 </ul>
             </div>
             <div className="PartnersContainer">
-                <p>{content.PARTNERS}</p>
-                <div className="PartnersGrid">
-                    <div className = "SiteLogo"><Link to="/" className = "ReactLink">Logo</Link></div>
-                    <div className = "SiteLogo"><Link to="/" className = "ReactLink">Logo</Link></div>
-                    <div className = "SiteLogo"><Link to="/" className = "ReactLink">Logo</Link></div>
-                    <div className = "SiteLogo"><Link to="/" className = "ReactLink">Logo</Link></div>
-                </div>
+                <p className="Thanks">{content.PARTNERS}</p>
             </div>
         </div>
     )

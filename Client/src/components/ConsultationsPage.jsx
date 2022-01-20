@@ -18,7 +18,7 @@ function ConsultationsPage(props) {
     let content = {
         EN: {
             T1: "Consultation Process",
-            P1: "CD monitores, inclusos tegumenta laptop, optime currunt ad solutionem nativam. Monitorem tuum non debes in hoc proposito currere, sed solet commendari ut textum acutissimum et imagines possibiles curare videas. Monitores LCD plerumque veniunt in duabus formis: vexillum proportio latitudinis ad altitudinem 4:3, vel amplitudinis proportio XVI: 9 vel 16:10. Monitor in widescreen utrumque latiore shsimiae et constantiae quam norma ratio monitoris.",
+            P1: "The purpose of the consultation process is to tap the ingenuity and expertise of top civic leaders, entrepreneurs and community organizations. We will assemble round tables through 2022 around themes ranging from green energy to health care, public transportation and nature preservation; interlinked components of sustainable prosperity. It takes a village to build a better future. Therefore, you are asked to participate via the Cocoriko platform either by commenting or introducing your own innovative proposals.",
             BUTTON: "Return to Home Page",
             T2: "List of Consultations"
     
@@ -26,7 +26,7 @@ function ConsultationsPage(props) {
     
         FR: {
             T1: "Processus de Consultation",
-            P1: "CD monitores, inclusos tegumenta laptop, optime currunt ad solutionem nativam. Monitorem tuum non debes in hoc proposito currere, sed solet commendari ut textum acutissimum et imagines possibiles curare videas. Monitores LCD plerumque veniunt in duabus formis: vexillum proportio latitudinis ad altitudinem 4:3, vel amplitudinis proportio XVI: 9 vel 16:10. Monitor in widescreen utrumque latiore shsimiae et constantiae quam norma ratio monitoris.",
+            P1: "L'objectif du processus de consultation est d'exploiter l'ingéniosité et l'expertise des principaux dirigeants, entrepreneurs et organismes communautaires. Nous organiserons des tables rondes au cours de 2022 autour de thèmes allant des énergies vertes aux soins de santé, en passant par les transports collectifs ou actifs, et la préservation de la nature ; tous essentiels à une prospérité durable. Il faut tout un village pour construire un avenir meilleur. Par conséquent, vous êtes invités à participer via la plateforme Cocoriko, soit en commentant, soit en présentant vos propres propositions innovantes.",
             BUTTON: "Retourner à la Page d'acceuil",
             T2: "Listes des Consultations"
             

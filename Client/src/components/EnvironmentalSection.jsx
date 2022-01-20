@@ -14,7 +14,7 @@ function EnvironmentalSection(props) {
     let content = {
         EN: {
           TITLE: "Environment section",
-          DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
+          DESCRIPTION: "The Environmental dimension of a green and prosperous future includes initiatives to preserve bio-diversity, to incorporate the ecological perspective into town planning, business and government policy, and adopt technologies and strategies that reduce the carbon footprint associated with human activity.",
           TITLE2: "List of chapters",
           BUTTON1: "Return to Green Book",
 
@@ -23,7 +23,7 @@ function EnvironmentalSection(props) {
     
         FR: {
             TITLE: "Volet Environmental",
-            DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
+            DESCRIPTION: "La dimension environnementale d’un avenir vert et prospère signifie explorer et supporter les initiatives visant à préserver la biodiversité et à intégrer la perspective écologique dans l'urbanisme, les décisions d’entreprises, et les politiques gouvernementales, et adopter des stratégies et des technologies qui réduisent l'empreinte carbone associée à l'activité humaine.",
             TITLE2: "liste des chapitres",
             BUTTON1: "Retourner au Livre Vert",
 

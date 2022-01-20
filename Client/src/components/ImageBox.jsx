@@ -5,8 +5,7 @@ function ImageBox(props) {
 
     let content = {
         EN: {
-          BUTTON1: "Participate to round tables",
-          BUTTON2: "Consult the consultations",
+          BUTTON2: "Round Tables",
           BUTTON3: "Read Green Book",
           BANNERTITLE: "OUTAOUAIS",
           BANNERADJ: "green",
@@ -15,8 +14,7 @@ function ImageBox(props) {
         },
     
         FR: {
-            BUTTON1: "Participer aux tables rondes",
-            BUTTON2: "Consulter les consultations",
+            BUTTON2: "Tables Rondes",
             BUTTON3: "Lire le livre vert",
             BANNERTITLE: "OUTAOUAIS",
             BANNERADJ: "vert",
@@ -36,8 +34,6 @@ function ImageBox(props) {
 
             </div>
             <div id='ContainerBoutons'>
-                
-                    <a href="https://demo.cocoriko.org/groups/pour-un-pontiac-vert-et-prospere?setLng=en-CA" className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
                     <Link to="/Consultation" className='HomeLink'> <p className='HomeButton'>{content.BUTTON2}</p></Link>
                     <Link to="/greenBook" className='HomeLink'><p className='HomeButton'>{content.BUTTON3}</p></Link>
 

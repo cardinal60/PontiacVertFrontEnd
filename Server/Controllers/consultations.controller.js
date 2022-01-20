@@ -1,6 +1,22 @@
 const consultationsRouter = require('express').Router();
 const { HTTP_STATUS } = require('../utils/http');
 const { ConsultationService } = require('../services/consultations.service');
+const jwt = require('express-jwt');
+const jwksRsa = require('jwks-rsa');
+
+const checkJwt = jwt({
+  secret: jwksRsa.expressJwtSecret({
+    cache: true,
+    rateLimit: true,
+    jwksRequestsPerMinute: 5,
+    jwksUri: `https://dev-355jr2n8.us.auth0.com/.well-known/jwks.json`
+  }),
+
+  // Validate the audience and the issuer.
+  audience: 'https://pontiacvert.auth',
+  issuer: `https://dev-355jr2n8.us.auth0.com/`,
+  algorithms: ['RS256']
+});
 
 class ConsultationController {
   constructor() {
@@ -20,6 +36,23 @@ class ConsultationController {
       const consultation = await this.ConsultationService.getAllConsultations();
       res.json(consultation);
     });
+    
+    /**
+     * Renvoyer une recette spécifique selon un id
+     * @returns la recette si le id existe. Sinon, le code d'erreur approprié
+     */
+    this.router.get('/:id', async (req, res) => {
+      try {
+        const { id } = req.params;
+        const recipe = await this.ConsultationService.getConsultationById(id);
+        if (!recipe) res.status(HTTP_STATUS.NOT_FOUND).send();
+        else res.json(recipe);
+      } catch (error) {
+        res.status(HTTP_STATUS.SERVER_ERROR).send();
+      }
+    });
+
+    this.router.use(checkJwt);
 
     /**
      * Ajouter la nouvelle recette dans la BD
@@ -38,20 +71,7 @@ class ConsultationController {
       }
     });
 
-    /**
-     * Renvoyer une recette spécifique selon un id
-     * @returns la recette si le id existe. Sinon, le code d'erreur approprié
-     */
-    this.router.get('/:id', async (req, res) => {
-      try {
-        const { id } = req.params;
-        const recipe = await this.ConsultationService.getConsultationById(id);
-        if (!recipe) res.status(HTTP_STATUS.NOT_FOUND).send();
-        else res.json(recipe);
-      } catch (error) {
-        res.status(HTTP_STATUS.SERVER_ERROR).send();
-      }
-    });
+    
 
     /**
      * Supprimer une recette spécifique selon un id

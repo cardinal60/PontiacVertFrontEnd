@@ -89,6 +89,7 @@ CSS Code for the  Navigation bar (Header)
   margin-right: 5%;
   text-decoration: none;
   border: 2px solid white;
+  cursor: pointer;
 }
 
 .LanguageButton {
@@ -277,13 +278,19 @@ CSS Rules for the footer
   gap: 5px;
   font-size: 0.7em;
 }
+.Thanks{
+  color: rgb(180, 180, 180);
+  font-size: 10px;
+  margin: 5pt 15pt;
+  
+}¨
+
 
 
 .PartnersContainer {
   display: flex;
   justify-content: flex-start;
   color: white;
-  visibility: hidden;
 }
 
 .PartnersGrid {
@@ -401,7 +408,7 @@ CSS rules for Partner Page
   border: 3px outset rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   width: 25em;
-  padding: 0.5% 0.5% 0.5% 0.5%;
+  padding: 0.0% 0.5% 0.5% 0.5%;
   margin-bottom: 5%;
   cursor: pointer;
 }
@@ -416,6 +423,11 @@ CSS rules for Partner Page
   background-color: #d5ec9d;
   color: black;
   border-radius: 10px;
+  margin-bottom: 10pt;
+}
+
+.notOrgClicked, .notRepClicked {
+ margin: 0pt 0pt 40pt 0;
 }
 
 
@@ -432,6 +444,11 @@ CSS rules for the About Page
   text-align: justify;
 
 }
+
+.AboutContainer h3 {
+  margin: 10pt;
+}
+
 
 .RepresentativeContainer {
  display: grid;
@@ -565,8 +582,8 @@ CSS rules for GreenBook
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 700px;
-  min-height: 700px;
+  max-height: 750px;
+  min-height: 760px;
   border-bottom: 10px solid rgba(0, 0, 0, 0.8);
 }
 .ImageGreenBook{
@@ -738,6 +755,10 @@ CSS Media Query rules
     padding: 0px;
     font-size: 25px;
     color: rgba(86,82,51,255);
+  }
+
+  .Thanks {
+    display: none;
   }
 
   

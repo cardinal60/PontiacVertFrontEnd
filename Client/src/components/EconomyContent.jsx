@@ -16,7 +16,7 @@ function EconomyContent(props) {
     let content = {
         EN: {
           TITLE: "Economy",
-          DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
+          DESCRIPTION: "La dimension environnementale d’un avenir vert et prospère signifie explorer et supporter les initiatives visant à préserver la biodiversité et à intégrer la perspective écologique dans l'urbanisme, les décisions d’entreprises, et les politiques gouvernementales, et adopter des stratégies et des technologies qui réduisent l'empreinte carbone associée à l'activité humaine.",
           TITLE2: "List of chapters",
           BUTTON1: "Return to Green Book",
 
@@ -25,7 +25,7 @@ function EconomyContent(props) {
     
         FR: {
             TITLE: "Economie",
-            DESCRIPTION: "Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.Platform Clima municipalis est instrumentum quo municipia dat ut clima uniat dum actionem collectivam committit ad pugnandum et ad mutationem climatis accommodandam.",
+            DESCRIPTION: "La dimension économique d'un avenir vert et prospère intègre des investissements stratégiques dans les nouvelles technologies et pratiques qui favorisent la décarbonisation de divers secteurs économiques pour accélérer la productivité et la croissance inclusive, et protéger les communautés et les entreprises des effets perturbateurs des changements climatiques.",
             TITLE2: "liste des chapitres",
             BUTTON1: "Retourner au livre Vert",
 

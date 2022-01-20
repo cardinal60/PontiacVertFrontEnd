@@ -6,7 +6,6 @@ function ConsultationBox(props) {
 
     const handleClick = () => {
         setClicked(!clicked);
-        console.log(props.consultation.EN.url);
     };
 
     let content = {
@@ -15,7 +14,7 @@ function ConsultationBox(props) {
            DESCRIPTION: props.consultation.EN.description,
            ICON: props.consultation.EN.icon,
            URL: props.consultation.EN.url,
-           BUTTON: "Participate!"
+           BUTTON: "To Come!"
     
         },
     
@@ -24,7 +23,7 @@ function ConsultationBox(props) {
             DESCRIPTION: props.consultation.FR.description,
             ICON: props.consultation.FR.icon,
             URL: props.consultation.FR.url,
-            BUTTON: "Participez!"
+            BUTTON: "À venir!"
             
         }
       }
