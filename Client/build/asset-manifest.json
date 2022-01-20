@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d0fc3bd.css",
+    "main.js": "/static/js/main.e2e44ca9.js",
+    "static/media/Maquette_SOCIAL.jpg": "/static/media/Maquette_SOCIAL.75bda0cc4f94ac0a8e93.jpg",
+    "static/media/Maquette_économie_final.jpg": "/static/media/Maquette_économie_final.0b62cb472363ccc693cd.jpg",
+    "static/media/Maquette_ENVIRO.jpg": "/static/media/Maquette_ENVIRO.de919a17ae831e4b8619.jpg",
+    "static/media/IMAGE_FOND_LIVRE.jpg": "/static/media/IMAGE_FOND_LIVRE.27cde111fb91c53a2b03.jpg",
+    "static/media/IMAGE_FOND.jpg": "/static/media/IMAGE_FOND.e869be45ddba4f4db6e9.jpg",
+    "index.html": "/index.html",
+    "main.8d0fc3bd.css.map": "/static/css/main.8d0fc3bd.css.map",
+    "main.e2e44ca9.js.map": "/static/js/main.e2e44ca9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d0fc3bd.css",
+    "static/js/main.e2e44ca9.js"
+  ]
+}
