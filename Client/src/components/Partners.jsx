@@ -149,8 +149,9 @@ function Partners(props) {
     
 
     return (
-        <main className="MainContent">
+        <main className="MainSecondaryContent">
             <ImageBanner title= {content.TITLE}/>
+            <div className="secPageContent">
             <div className="AboutContainer">
                 <h2>{content.T1}</h2>
                 
@@ -257,7 +258,7 @@ function Partners(props) {
                 
                 <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON2}</p></Link>
             </div>
-            
+          </div>
         </main>
     )
 }

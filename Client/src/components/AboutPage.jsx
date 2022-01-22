@@ -41,8 +41,9 @@ function AboutPage(props) {
       : (content = content.EN)
 
     return (
-        <main className="MainContent">
-            <ImageBanner title= {content.TITLE}/>
+        <main className="MainSecondaryContent">
+            <ImageBanner className= "noMargin" title= {content.TITLE}/>
+            <div className="secPageContent">
               <div className="AboutContainer">
                   <h2>{content.T2}</h2>
                   <p className="IntroductionParagraph">{content.P2}</p>
@@ -55,6 +56,7 @@ function AboutPage(props) {
 
               </div>
               <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON3}</p></Link>
+            </div>
         </main>
     )
 }

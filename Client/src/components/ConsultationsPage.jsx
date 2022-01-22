@@ -37,25 +37,28 @@ function ConsultationsPage(props) {
       ? (content = content.EN)
       : (content = content.FR)
     return (
-        <main className="MainContent">
+        <main className="MainSecondaryContent">
+            
             <ImageBanner title="CONSULTATIONS"/>
-            <div className="marginConsultationContent">
-                <h2>{content.T1}</h2>
-                <p>{content.P1}</p>
-                <h2>{content.T2}</h2>
-                <div className="ConsultationsContainer">
-                {isLoading ? (
-              <div className='loaderContainer'>
-                  <p>Loading...</p>
-              </div>
-                ) : (
-                consultations.map((consultation) => <ConsultationBox className="ConsultationBox" key = {consultation.id} consultation= {consultation} language= {props.language}/>)
-                )}
-                    
+            <div className="secPageContent">
+                <div className="marginConsultationContent">
+                    <h2>{content.T1}</h2>
+                    <p>{content.P1}</p>
+                    <h2>{content.T2}</h2>
+                    <div className="ConsultationsContainer">
+                    {isLoading ? (
+                <div className='loaderContainer'>
+                    <p>Loading...</p>
                 </div>
-            </div>
+                    ) : (
+                    consultations.map((consultation) => <ConsultationBox className="ConsultationBox" key = {consultation.id} consultation= {consultation} language= {props.language}/>)
+                    )}
+                        
+                    </div>
+                </div>
 
-            <Link to="/" className="ReturnButton"><p className='HomeButton'>{content.BUTTON}</p></Link>
+                <Link to="/" className="ReturnButton"><p className='HomeButton'>{content.BUTTON}</p></Link>
+            </div>
 
         </main>
     )

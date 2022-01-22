@@ -4,13 +4,13 @@ function ContactPage(props) {
 
 
     return (
-        <main className="MainContent">
+        <main className="MainSecondaryContent">
             <ImageBanner title= "CONTACT"/>
-
-            <div className="EmailAddress">
-                sophie.chatel@parl.gc.ca
+            <div className="secPageContent">
+                <div className="EmailAddress">
+                    sophie.chatel@parl.gc.ca
+                </div>
             </div>
-
         </main>
     )
 }
