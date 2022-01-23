@@ -52,7 +52,7 @@ function AboutPage(props) {
                   <h2>{content.T4}</h2>
                   <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON2}</p></a>
                   <h2>{content.T3}</h2>
-                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
+                  <a href={content.URL} target= "_blank" rel='noreferrer' className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
 
               </div>
               <Link to="/" className="HomeLink ReturnButton"><p className='HomeButton'>{content.BUTTON3}</p></Link>

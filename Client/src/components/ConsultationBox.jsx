@@ -44,7 +44,7 @@ function ConsultationBox(props) {
                     <img src={content.ICON} width={100} height={100} alt="leaf"></img>
                     <div className="ConsultationBoxDescription">
                         <p className='justified'>{content.DESCRIPTION}</p>
-                        <a href={content.URL} className='ConsultationBoxButton'><p className='HomeButton'>{content.BUTTON}</p></a>
+                        <a href={content.URL} target= "_blank" rel='noreferrer' className='ConsultationBoxButton'><p className='HomeButton'>{content.BUTTON}</p></a>
                     </div>
                 </div>
             </div>
