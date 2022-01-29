@@ -27,7 +27,7 @@ function GreenBookBanner(props) {
 
     return (
         <div className="ContentContainer">
-            <SpecialText bannerTitle = {content.BANNERTITLE} bannerAdj = {content.BANNERADJ} bannerFullAdj = {content.BANNERFULLADJ}/>
+            <SpecialText className= "marginRight" bannerTitle = {content.BANNERTITLE} bannerAdj = {content.BANNERADJ} bannerFullAdj = {content.BANNERFULLADJ}/>
                 
             <div className='DescriptionContainer'>
                 <p className= "DescriptionSite">{content.TEXTE}</p>

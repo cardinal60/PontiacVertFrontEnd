@@ -279,8 +279,8 @@ CSS Rules for the footer
   font-size: 0.7em;
 }
 .Thanks{
-  color: rgb(180, 180, 180);
-  font-size: 10px;
+  color: rgb(230, 230, 230);
+  font-size: 12px;
   margin: 5pt 15pt;
   
 }¨
@@ -596,7 +596,7 @@ CSS rules for GreenBook
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-height: 750px;
+  max-height: 760px;
   min-height: 760px;
   border-bottom: 10px solid rgba(0, 0, 0, 0.8);
 }
@@ -712,7 +712,7 @@ CSS rules for Text with special Font
   top: -15px;
   left: 20px;
   margin: 0px;
-  padding: 0px;
+  padding-right: 20pt;
   z-index: 20;
   height: 100px;
 }
@@ -849,9 +849,10 @@ CSS Media Query rules
   .noSpace {
     position: relative;
     top: -11px;
-    left: 20px;
+    left: 10pt;
+    right: 40pt;
     margin: 0px;
-    padding: 0px;
+    padding-right: 30pt;
     z-index: 20;
     height: 50px;
   }
