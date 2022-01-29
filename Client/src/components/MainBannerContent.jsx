@@ -17,9 +17,9 @@ function MainBannerContent(props) {
         }
       }
 
-      props.language === "EN"
-      ? (content = content.EN)
-      : (content = content.FR)
+      props.language === "FR"
+      ? (content = content.FR)
+      : (content = content.EN)
 
     return (
         <div className="ContentContainer">
