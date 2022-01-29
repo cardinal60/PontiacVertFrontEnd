@@ -42,8 +42,7 @@ const App = () => {
         }
         setLoad(false);
         */
-        SETIP(ip.ip);
-        console.log(language);
+        SETIP(ip.ip)
       }, []);
 
     const switchLanguage = () =>{

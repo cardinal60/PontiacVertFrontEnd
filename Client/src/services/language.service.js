@@ -6,7 +6,6 @@ class LanguageService {
 
       findUserLanguage() {
           const preferedLanguage = this.language.find((elem) => elem === "en" || elem === "fr");
-          console.log(preferedLanguage);
           if(preferedLanguage){
               return "fr";
           }
