@@ -1,0 +1,956 @@
+/*
+CSS code for the font
+*/
+
+html, body, #root, .body_container, .BodyContent {
+  height: 100%;
+}
+
+* {
+  color: rgb(50, 50, 50);
+  font-family: "Montserrat";
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*
+CSS Code for the  Navigation bar (Header)
+*/
+.NavigationMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+  height: 50px;
+}
+
+.NavList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.NavLink {
+  width: 10em;
+  height: 2em;
+  border: 2px solid rgba(19, 15, 14, 0.001);
+  border-radius: 4px;
+  margin-right: 5%;
+  transition: all ease-out 0.2s;
+  text-decoration: none;
+
+}
+
+.NavLink :hover {
+  background-color: #acd44e;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.SiteLogo {
+  width: 3em;
+  height: 3em;
+
+}
+
+.logo {
+  width: 87.5px;
+  height: 50px;
+  margin-left: 65%;
+}
+
+.ReactLink {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.LangLink{
+  width: 3em;
+  height: 2em;
+  border: 2px solid rgba(19, 15, 14, 0.001);
+  border-radius: 4px;
+  margin-right: 5%;
+  text-decoration: none;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.LanguageButton {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: White;
+}
+
+.NavigationContainer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(19, 15, 14, 0.5);
+  z-index: 100;
+}
+
+/*
+ CSS rules for the ImageBanner
+*/
+
+
+.MainImageBanner {
+  margin-top: 15%;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255, 0.6));
+
+}
+
+.GreenMainImageBanner {
+  margin-top: 20%;
+  padding: 5% 0% 5% 0%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255, 0.6));
+
+}
+
+.marginLeft {
+  margin-left: 15%;
+}
+
+.ContentContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MainPageImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 700px;
+  min-height: 700px;
+  width: 100%;
+  background-image: url(../public/images/IMAGE_FOND.jpg);
+  background-size: cover;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+}
+
+#HomeTitle {
+  color: black;
+  font-size: 2rem;
+  padding-left: 10%;
+}
+
+#HomeTitleDescription {
+  color: black;
+  font-size: 1.5rem;
+  padding-left: 40%;
+}
+
+/*
+CSS rules for the home PAge
+*/
+.DescriptionSite {
+  font-size: 1.35rem;
+  width: 80%;
+  text-align: justify;
+}
+
+.DescriptionContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ContainerBoutons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+#GreenContainerBoutons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+
+
+.HomeButton {  
+  text-decoration: none;
+  color: rgba(30, 30, 30, 1);
+  background-color: rgba(200, 231, 128, 0.7);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.HomeLink {
+  border: 2px solid rgba(50, 50, 50, 1);
+  border-radius: 10px;
+  width: 15em;
+  height: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-out 2s;
+  
+  
+}
+
+.HomeLink :hover {
+  background-color: #acd44e;
+  border-radius: 10px;
+  color: white;
+}
+.SignatureContainer {
+  margin: 3% 0% 3% 25%;
+}
+
+.RepSignature {
+  font-family: 'Alex Brush';
+  font-size: 35px;
+}
+
+.RepTitle {
+  font-size: 20px;
+}
+
+/*
+CSS Rules for the footer
+*/
+
+.FooterContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(22, 20, 19, 1);
+}
+
+.FooterNavContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Blue {
+  color: rgb(43, 43, 230);
+}
+
+.FooterNavContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FooterLinks  {
+  list-style: none;
+  margin-left: 10px;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  font-size: 0.7em;
+}
+.Thanks{
+  color: rgb(230, 230, 230);
+  font-size: 12px;
+  margin: 5pt 15pt;
+  
+}¨
+
+
+
+.PartnersContainer {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+
+.PartnersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5px;
+  gap: 5px;
+}
+
+.PageContent {
+  flex: 1;
+  background-color: rgba(248,244,241,255);
+  /*background-color: rgba(247,249,248,255);*/
+  
+}
+
+.Footer {
+  flex-shrink: 0;
+}
+
+.BodyContent {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+General CSS rules for all the other pages
+*/
+
+.ImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+.ImageBanner {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 1.8em;
+  margin: 0%;
+
+}
+
+.Padding5 {
+  padding-left: 10pt;
+}
+
+.Padding10 {
+  padding-left: 20pt;
+}
+
+.Padding15 {
+  padding-left: 30pt;
+}
+
+/*
+CSS Rules for the contact page
+*/
+
+.EmailAddress {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 10pt;
+}
+
+.AdressContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 25%;
+  margin-bottom: 10%;
+
+}
+
+.NoMargin {
+  margin: 0%;
+  padding: 0%;
+}
+
+.NoBottomMargin {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+/*
+CSS rules for the introduction page
+*/
+
+.marginConsultationContent{
+  margin: 10pt 15% 40pt 15%;
+}
+
+.IntroductionParagraph {
+  padding-left: 5%;
+  text-align: justify;
+}
+
+.MainSecondaryContent {
+  background-image: url(../public/images/IMAGE_FOND.jpg);
+  background-size: cover;
+}
+/*
+CSS rules for Partner Page
+*/
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.PartnerList {
+  border: 3px outset rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 25em;
+  padding: 0.0% 0.5% 0.5% 0.5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.PartnerList:hover {
+  background-color: #acd44e;
+  color: white;
+  border-radius: 10px;
+}
+
+.OrgClicked, .Repclicked {
+  background-color: #d5ec9d;
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 10pt;
+}
+
+.notOrgClicked, .notRepClicked {
+ margin: 0pt 0pt 40pt 0;
+}
+
+
+
+
+/*
+CSS rules for the About Page
+*/
+
+.AboutContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 10%;
+  text-align: justify;
+  width: 80%;
+
+}
+
+.AboutContainer h2 {
+  margin-bottom: 0%;
+}
+
+.AboutContainer h3 {
+  margin: 10pt;
+}
+
+.secPageContent {
+  background-image: linear-gradient(to bottom, rgba(248,244,241,0.8), rgba(248,244,241, 1));
+  margin-top: 0%;
+  border: 1px solid rgb(50, 50, 50);
+}
+
+
+.RepresentativeContainer {
+ display: grid;
+ grid-template-columns: 1fr;
+ row-gap: 5pt;
+ column-gap: 50pt;
+ padding-left: 60pt;
+}
+
+/*
+CSS rules for consultationBox
+*/
+
+.ConsultationBox{
+  margin-bottom: 50px;
+}
+.ClosedBoxContainer {
+  border: 3px outset rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30pt;
+  padding-left: 5%;
+  padding-right: 5%;
+  max-height: 55px;
+}
+
+.ArrowUp {
+  border: solid rgba(0, 0, 0, 0.5);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.ArrowDown {
+  border: solid rgba(0, 0, 0, 0.5);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.ConsultationBoxContainer {
+  border: 3px outset rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30pt;
+  z-index: 0;
+}
+
+.ConsultationBoxTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px double black;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: auto;
+  max-height: 60px;
+}
+.ConsultationBoxContent {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  padding-top: 10pt;
+}
+
+.ConsultationBoxDescription {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+}
+
+/*
+CSS rules for Consultation Page
+*/
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ConsultationsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+.RightMargin {
+  margin-right: 10%;
+}
+
+.marginTop {
+  margin-top: 50pt;
+}
+
+
+.ConsultationBoxButton {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 15em;
+  height: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-out 5s;
+  z-index: 50;
+  margin-left: 10%;
+}
+
+.ConsultationBoxButton :hover {
+  background-color: #acd44e;
+  border-radius: 10px;
+  color: white;
+}
+
+.justified {
+  text-align: justify;
+}
+/*
+CSS rules for GreenBook
+*/
+.GreenBookPageImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 760px;
+  min-height: 760px;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+}
+.ImageGreenBook{
+  background-image: url(../public/images/IMAGE_FOND_LIVRE.jpg); 
+  background-size: cover;
+}
+.ImageEnvironment {
+  background-image: url(../public/images/Maquette_ENVIRO.jpg);
+  background-size: cover;
+}
+
+.ImageSocial {
+  background-image: url(../public/images/Maquette_SOCIAL.jpg);
+  background-size: cover;
+}
+.ImageEconomy {
+  background-image: url(../public/images/Maquette_économie_final.jpg  );
+  background-size: cover;
+}
+
+.ChapterContainer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 25pt;
+}
+
+.ChapterContainer a {
+  margin: 5pt;
+}
+
+.GreenBookImageBanner {
+  padding: 1% 0% 5% 0%;
+  margin-top: 20%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+.GreenBookContent{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.GreenBookBottom {
+  margin: 40pt 10% 70pt 10%;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.smallTopMargin {
+  margin-top: 5pt;
+  margin-bottom: 50pt;
+}
+
+.ReturnButton {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 15em;
+  height: 3em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-out 2s;
+  margin: 0 auto 40pt auto;
+  
+  
+}
+
+.ReturnButton :hover {
+  background-color: #acd44e;
+  border-radius: 10px;
+  color: white;
+}
+
+/*
+CSS rules for Text with special Font
+*/
+
+.AvenirFont {
+  font-family: "Montserrat";
+  margin: 0px;
+  padding: 0px;
+  font-size: 50px;
+  color: rgba(86,82,51,255);
+}
+
+.smallerAvenirFont {
+  font-family: "Montserrat";
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
+  color: rgba(86,82,51,255);
+}
+
+.customShadow {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: 30px;
+  top: -70px;
+  font-size: 125px;
+  z-index: -1;
+  color: rgba(153,161,99,255);
+  font-family: 'Alex Brush';
+
+}
+
+.noSpace {
+  position: relative;
+  top: -15px;
+  left: 20px;
+  margin: 0px;
+  padding-right: 20pt;
+  z-index: 20;
+  height: 100px;
+}
+
+.marginTop {
+  margin-top: 10%;
+  padding-top: 10%;
+}
+
+/*
+CSS Media Query rules
+*/
+@media screen and (min-width: 1200px) {
+  .ConsultationsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+  }
+
+  .ConsultationBoxButton {
+    margin-left: 0%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .logo, .SiteLogo {
+    display: none;
+  }
+  .NavigationMenu {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .NavLink, .HomeLink {
+    width: 5em;
+    
+  }
+  .ReactLink, .HomeButton {
+    font-size: 10px;
+  }
+
+
+}
+@media screen and (max-width: 1200px) and (min-width: 800px){
+  .DescriptionSite{
+    font-size: small;
+  }
+}
+
+@media screen  and (max-width: 1300px) {
+  .NavLink, .HomeLink {
+    width: 6em;
+  }
+
+  .NavigationMenu {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo, .SiteLogo {
+    display: none;
+  }
+  .NavigationMenu {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .NavLink, .HomeLink {
+    width: 6em;
+    
+  }
+  .ReactLink, .HomeButton {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .NavLink, .HomeLink {
+    width: 4em;
+  }
+  .LangLink {
+    min-width: 1.5em;
+    max-height: 1.5em;
+  }
+
+  .LeftMargin {
+    margin-left: 0%;
+  }
+
+  .ReactLink, .HomeButton, .LanguageButton {
+    font-size: 9px;
+  }
+  
+  .AvenirFont {
+    font-family: "Montserrat";
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    color: rgba(86,82,51,255);
+  }
+
+  .Thanks {
+    display: none;
+  }
+
+  
+
+  .GreenMainImageBanner{
+    padding: 0px;
+  }
+
+  .RightMargin {
+    margin-right: 0%;
+  }
+
+  .PartnerList {
+    font-size: medium;
+    width: 15em;
+  }
+  
+  .customShadow {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 30px;
+    top: -40px;
+    font-size: 62px;
+    z-index: -1;
+    color: rgba(153,161,99,255);
+    font-family: 'Alex Brush';
+  
+  }
+  
+  .noSpace {
+    position: relative;
+    top: -11px;
+    left: 10pt;
+    right: 40pt;
+    margin: 0px;
+    padding-right: 30pt;
+    z-index: 20;
+    height: 50px;
+  }
+
+  
+
+  .ContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10%;
+  }
+  #ContainerBoutons {
+    flex-wrap: wrap;
+  }
+  .MainImageBanner {
+    margin-bottom: 10%;
+    margin-top: 20%;
+  }
+
+   .DescriptionSite{
+    width: fit-content;
+    text-align: left;
+    font-size: 10px;
+  }
+  .DescriptionContainer{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 100px) {
+
+  .NavLink, .HomeLink {
+    width: 4em;
+  }
+  .LangLink {
+    min-width: 1.5em;
+    max-height: 1.5em;
+  }
+
+  .LeftMargin {
+    margin-left: 0%;
+  }
+
+  .ReactLink, .HomeButton, .LanguageButton {
+    font-size: 7.5px;
+  }
+
+  .DescriptionSite {
+    font-size: 10px;
+    margin: 0% 10%;
+
+  }
+
+  .RepSignature {
+    font-size: 17.5px;
+  }
+  
+  .RepTitle {
+    font-size: 10px;
+  }
+
+  .NavList, .NavigationMenu {
+    justify-content: space-around;
+  }
+
+  .PhoneRemove {
+    display: none;
+  }
+
+  .ConsultationBoxContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ConsultationBoxButton {
+    width: 7.5em;
+  }
+  .marginConsultationContent {
+    margin: 10pt 5% 40pt 5%;
+  }
+  
+  .ArrowDown {
+    margin-left: 5%;
+    max-height: fit-content;
+    max-width: fit-content;
+  }
+  .ReturnButton{
+    width: 10em;
+  }
+
+  .RepresentativeContainer {
+    margin: 20pt 0 20pt 0;
+    font-size: small;
+    grid-template-columns: 1fr;
+  }
+
+
+}
