@@ -17,8 +17,7 @@ import languageService from "./services/language.service.js";
 const App = () => {
     
     const [language, setLanguage] = useState(languageService.findUserLanguage().toUpperCase());
-    /*const [validIP, setIP] = useState(false);
-    const [isLoading, setLoad] = useState(true);*/
+    /*const [validIP, setIP] = useState(false);*/
     const [IP, SETIP] = useState("");
 
     let content = {
