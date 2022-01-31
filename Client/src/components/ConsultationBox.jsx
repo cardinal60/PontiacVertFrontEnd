@@ -14,7 +14,7 @@ function ConsultationBox(props) {
            DESCRIPTION: props.consultation.EN.description,
            ICON: props.consultation.EN.icon,
            URL: props.consultation.EN.url,
-           BUTTON: "To Come!"
+           BUTTON: props.consultation.EN.button
     
         },
     
@@ -23,7 +23,7 @@ function ConsultationBox(props) {
             DESCRIPTION: props.consultation.FR.description,
             ICON: props.consultation.FR.icon,
             URL: props.consultation.FR.url,
-            BUTTON: "À venir!"
+            BUTTON: props.consultation.FR.button
             
         }
       }
