@@ -71,7 +71,7 @@ function AgricultureConsultation(props) {
           D1NAME: "Presentation Climat et Impacts",
           D1URL: "http://sophiechatel.libparl.ca/wp-content/uploads/sites/171/2022/02/3-2022-01-27-Presentation-Climat-et-Impacts.pdf",
           DBUTTON: "Consult!",
-          D2NAME: "ALUS_UPA_OutaouaisVertetProspère",
+          D2NAME: "ALUS UPA Outaouais Vert et Prospère",
           D2URL: "http://sophiechatel.libparl.ca/wp-content/uploads/sites/171/2022/02/ALUS_UPA_OutaouaisVertetProspere.pdf",
           D3NAME: "Tableau comparatif et propositions issues de la table ronde",
           D3URL: "http://sophiechatel.libparl.ca/wp-content/uploads/sites/171/2022/02/Tableau-comparatif-et-propositions-issues-de-la-table-ronde.pdf",
@@ -89,7 +89,7 @@ function AgricultureConsultation(props) {
         <ImageBanner className= "noMargin" title= {content.TITLE}/>
         <div className="secPageContent">
         <div className="AboutContainer">
-            <h1>{content.T1}</h1>
+            <h1 className="RoundTableTitle">{content.T1}</h1>
             <p>{content.TIME}</p>
                 <article className="RoundTableArticle">
                     <div className="tableContainer">

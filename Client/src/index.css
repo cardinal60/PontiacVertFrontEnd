@@ -854,12 +854,16 @@ CSS Media Query rules
     flex-wrap: wrap;
   }
   .asideVideo {
-    width: 70%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 1000px) {
   .logo, .SiteLogo {
     display: none;
+  }
+  .RoundTableTitle {
+    margin-top: 25pt;
+    font-size: 20px;
   }
   .NavigationMenu {
     justify-content: flex-start;
@@ -873,7 +877,12 @@ CSS Media Query rules
     font-size: 10px;
   }
   .asideVideo {
-    width: 100%;
+    width: 50%;
+  }
+
+  .tableContainer {
+    flex-direction: column;
+    align-items: center;
   }
   .RoundTableArticle {
     display: flex;
@@ -891,6 +900,10 @@ CSS Media Query rules
 @media screen and (max-width: 800px) {
   .NavLink, .HomeLink {
     width: 4em;
+  }
+
+  .ImageBanner {
+    font-size: 1.2em;
   }
   .LangLink {
     min-width: 1.5em;
