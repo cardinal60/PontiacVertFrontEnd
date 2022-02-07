@@ -61,7 +61,7 @@ const App = () => {
                     <meta charSet="utf-8" />
                     <title>{content.TITLE}</title>
                     <link rel="canonical" href="https://www.outaouaisvert.ca/" />
-                    {/*<meta name= "description" content= {content.DESCRIPTION}></meta>*/}
+                    <meta name= "description" content= {content.DESCRIPTION}></meta>
                 </Helmet>
                 <Router >
                     <div className= "BodyContent">
