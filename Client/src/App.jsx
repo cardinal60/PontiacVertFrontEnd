@@ -17,9 +17,19 @@ import languageService from "./services/language.service.js";
 import AgricultureConsultation from "./components/AgricultureConsultation.jsx";
 const App = () => {
     
-    const [language, setLanguage] = useState(languageService.findUserLanguage().toUpperCase());
+    const checkForLanguage = () => {
+        if(languageService && languageService.findUserLanguage()){
+            return languageService.findUserLanguage().toUpperCase();
+        }
+        else {
+            return 'FR';
+        }
+    }
+    
+    const [language, setLanguage] = useState(checkForLanguage());
     /*const [validIP, setIP] = useState(false);
     const [isLoading, setLoad] = useState(true);*/
+    
 
     let content = {
         EN: {
