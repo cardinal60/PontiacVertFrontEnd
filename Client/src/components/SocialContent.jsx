@@ -7,9 +7,13 @@ function SocialContent(props) {
     const [chapters, setChapters] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(async () => {
-        setChapters(await httpService.getChaptersByCategory("Social"));
-        setIsLoading(false);
+    useEffect( () => {
+        async function getChapter(){
+            setChapters(await httpService.getChaptersByCategory("Social"));
+            setIsLoading(false);
+        }
+        getChapter();
+        
       }, []);
 
     let content = {

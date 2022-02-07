@@ -723,6 +723,88 @@ CSS rules for Text with special Font
 }
 
 /*
+CSS rules for Round Table PAge
+*/
+.RoundTableArticle {
+  width: 100%;
+}
+
+.tableContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+.RoundTableVideo {
+  width: 400pt;
+  height: 300pt;
+  visibility: hidden;
+
+}
+
+.asideVideo {
+  width: 40%;
+
+}
+
+.TableParticipants {
+  list-style: decimal;
+}
+
+.RoundTableDoc {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px ridge rgb(70, 70, 70);
+  border-radius: 15px;
+  margin-bottom: 30pt;
+  text-decoration: none;
+  background-color: rgba(200, 231, 128, 0.7);
+}
+
+.RoundTableDoc:hover {
+  background-color: #acd44e;
+  border-radius: 15px;
+  color: rgb(230, 230, 230);
+  transition: 0.2s ease-out;
+}
+
+.RoundTableDoc p {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 15px;
+}
+
+.DocumentSection {
+  margin-top: 50pt;
+}
+
+.documentTitle { 
+  padding-bottom: 50pt;
+}
+.documentName {
+  text-decoration: none;
+}
+
+.documentName:hover {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+}
+
+.marginBottom {
+  margin-bottom: 10pt;
+}
+
+
+.DocStyle * {
+  margin-left: 5pt;
+  margin-right: 5pt;
+}
+/*
 CSS Media Query rules
 */
 @media screen and (min-width: 1200px) {
@@ -771,6 +853,9 @@ CSS Media Query rules
     justify-content: space-around;
     flex-wrap: wrap;
   }
+  .asideVideo {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .logo, .SiteLogo {
@@ -786,6 +871,20 @@ CSS Media Query rules
   }
   .ReactLink, .HomeButton {
     font-size: 10px;
+  }
+  .asideVideo {
+    width: 100%;
+  }
+  .RoundTableArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15pt;
+    font-size: 12px;
+  }
+
+  .documentName {
+    font-size: 15px;
   }
 }
 

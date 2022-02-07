@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function ConsultationBox(props) {
     const [clicked, setClicked] = useState(false);
@@ -14,7 +15,9 @@ function ConsultationBox(props) {
            DESCRIPTION: props.consultation.EN.description,
            ICON: props.consultation.EN.icon,
            URL: props.consultation.EN.url,
-           BUTTON: props.consultation.EN.button
+           BUTTON: props.consultation.EN.button,
+           LINK: props.consultation.EN.link,
+           BUTTON2: "To know more"
     
         },
     
@@ -23,7 +26,9 @@ function ConsultationBox(props) {
             DESCRIPTION: props.consultation.FR.description,
             ICON: props.consultation.FR.icon,
             URL: props.consultation.FR.url,
-            BUTTON: props.consultation.FR.button
+            BUTTON: props.consultation.FR.button,
+            LINK: props.consultation.EN.link,
+            BUTTON2: "En savoir plus"
             
         }
       }
@@ -44,6 +49,7 @@ function ConsultationBox(props) {
                     <img src={content.ICON} width={100} height={100} alt="leaf"></img>
                     <div className="ConsultationBoxDescription">
                         <p className='justified'>{content.DESCRIPTION}</p>
+                        <Link to={content.LINK} className='ConsultationBoxButton marginBottom'><p className='HomeButton'>{content.BUTTON2}</p></Link>
                         <a href={content.URL} target= "_blank" rel='noreferrer' className='ConsultationBoxButton'><p className='HomeButton'>{content.BUTTON}</p></a>
                     </div>
                 </div>

@@ -14,12 +14,12 @@ import EconomyPage from "./components/EconomyPage.jsx";
 import httpService from "./services/http.service.js";
 import { Helmet } from "react-helmet";
 import languageService from "./services/language.service.js";
+import AgricultureConsultation from "./components/AgricultureConsultation.jsx";
 const App = () => {
     
     const [language, setLanguage] = useState(languageService.findUserLanguage().toUpperCase());
     /*const [validIP, setIP] = useState(false);
     const [isLoading, setLoad] = useState(true);*/
-    const [IP, SETIP] = useState("");
 
     let content = {
         EN: {
@@ -34,16 +34,14 @@ const App = () => {
         }
       }
 
-    useEffect(async () => {
-        const ip = await httpService.getIp();
-        /*
-        if(ip.ip ==="173.177.110.10" || ip.ip === "52.60.169.78"){
-            setIP(true);
+    useEffect( () => {
+
+        async function setIP(){
+         await httpService.getIp();
         }
-        setLoad(false);
-        */
-        SETIP(ip.ip)
+        setIP();
       }, []);
+
 
     const switchLanguage = () =>{
         if(language === "EN")
@@ -61,7 +59,7 @@ const App = () => {
             <div className = "body_container">
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>{content.TITLE}</title>
+                    <title>Outaouais Vert et Prospère</title>
                     <link rel="canonical" href="https://www.outaouaisvert.ca/" />
                     <meta name= "description" content= {content.DESCRIPTION}></meta>
                 </Helmet>
@@ -79,6 +77,7 @@ const App = () => {
                                 <Route path="/greenBook/environment" element= {<EnvironmentalSection language = {language}/>}/>
                                 <Route path="/greenBook/social" element= {<SocialPage language = {language}/>}/>
                                 <Route path="/greenBook/economy" element= {<EconomyPage language = {language}/>}/>
+                                <Route path= "/consultation/durableAgriculture" element= {<AgricultureConsultation language = {language} />}/>
                                 
                             </Routes>
                         </div>

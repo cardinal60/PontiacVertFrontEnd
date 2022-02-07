@@ -8,9 +8,12 @@ function EconomyContent(props) {
     const [chapters, setChapters] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(async () => {
-        setChapters(await httpService.getChaptersByCategory("Economy"));
-        setIsLoading(false);
+    useEffect( () => {
+        async function getChapter(){
+            setChapters(await httpService.getChaptersByCategory("Economy"));
+            setIsLoading(false);
+        }
+        getChapter();
       }, []);
       
     let content = {
