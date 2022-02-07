@@ -59,9 +59,9 @@ const App = () => {
             <div className = "body_container">
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Outaouais Vert et Prospère</title>
+                    <title>{content.TITLE}</title>
                     <link rel="canonical" href="https://www.outaouaisvert.ca/" />
-                    <meta name= "description" content= {content.DESCRIPTION}></meta>
+                    {/*<meta name= "description" content= {content.DESCRIPTION}></meta>*/}
                 </Helmet>
                 <Router >
                     <div className= "BodyContent">
