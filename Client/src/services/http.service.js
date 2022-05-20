@@ -1,5 +1,5 @@
 const HTTPInterface = {
-    SERVER_URL: 'https://pontiac-vert.herokuapp.com/api',
+    SERVER_URL: 'https://pontiac-vert-serveur.herokuapp.com/api',
   
     async GET(endpoint) {
       const response = await fetch(`${this.SERVER_URL}/${endpoint}`);

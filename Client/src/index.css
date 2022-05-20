@@ -476,7 +476,7 @@ CSS rules for the About Page
 CSS rules for consultationBox
 */
 
-.ConsultationBox{
+.ConsultationBox {
   margin-bottom: 50px;
 }
 .ClosedBoxContainer {
@@ -550,6 +550,14 @@ CSS rules for Consultation Page
 .ConsultationsContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.dividedConsultations {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 300pt;
   justify-content: space-around;
 }
 @media screen and (min-width: 900px) {

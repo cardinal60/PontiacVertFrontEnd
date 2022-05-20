@@ -8,10 +8,16 @@ function ConsultationsPage(props) {
 
     const [consultations, setConsultations] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [half, setHalf] = useState(0);
+
+    const sortConsultations = (consultationList) => {
+        setHalf(Math.ceil(consultationList.length / 2));
+        return consultationList.sort((a, b) => (a.id - b.id));
+    }
 
     useEffect( () => {
         async function fetchConsultations(){
-            setConsultations(await httpService.fetchAllConsultations());
+            setConsultations(sortConsultations(await httpService.fetchAllConsultations()));
             setIsLoading(false);
         }
 
@@ -57,7 +63,17 @@ function ConsultationsPage(props) {
                     <p>Loading...</p>
                 </div>
                     ) : (
-                    consultations.map((consultation) => <ConsultationBox className="ConsultationBox" key = {consultation.id} consultation= {consultation} language= {props.language}/>)
+                    <div className="ConsultationsContainer">
+                        <div className="dividedConsultations">
+                            {consultations.slice(0, half).map((consultation) => <ConsultationBox className="ConsultationBox" key = {consultation.id} consultation= {consultation} language= {props.language}/>)}
+                        </div>
+                        <div className="dividedConsultations">
+                            {consultations.slice(-half).map((consultation) => <ConsultationBox className="ConsultationBox" key = {consultation.id} consultation= {consultation} language= {props.language}/>)}
+                        </div>
+                    
+                    
+                    </div>
+                    
                     )}
                         
                     </div>
