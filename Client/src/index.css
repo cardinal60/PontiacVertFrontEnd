@@ -553,13 +553,6 @@ CSS rules for Consultation Page
   justify-content: space-around;
 }
 
-.dividedConsultations {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 300pt;
-  justify-content: space-around;
-}
 @media screen and (min-width: 900px) {
   article {
     padding: 1rem 3rem;

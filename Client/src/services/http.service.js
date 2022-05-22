@@ -69,6 +69,27 @@ const HTTPInterface = {
       }
     }
 
+    async fetchConsultationsInOrder() {
+      try {
+        let consultations =  await HTTPInterface.GET(`${this.consultationsBaseURL}`);
+        const half = Math.ceil(consultations.length / 2);
+        consultations = consultations.sort((a, b) => (a.id - b.id));
+        const newList = []
+        for (let i = 0; i < half; i++) {
+            newList.push(consultations[i]);
+            
+            if (half + i < consultations.length) 
+              newList.push(consultations[half + i]);
+              
+        }
+        return newList;
+      } catch (error) {
+        return this.consultations;
+      }
+      
+
+    }
+
     /**
      * Fait une requête GET à /api/chapters pour obtenir toutes les recettes
      * @returns
