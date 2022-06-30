@@ -16,6 +16,7 @@ import { Helmet } from "react-helmet";
 import languageService from "./services/language.service.js";
 import AgricultureConsultation from "./components/AgricultureConsultation.jsx";
 import GreenEconomyConsultation from "./components/greenEconomy.jsx";
+import NumericalEconomyConsultation from "./components/NumericalEconomyConsultation.jsx";
 const App = () => {
     
     const checkForLanguage = () => {
@@ -90,7 +91,7 @@ const App = () => {
                                 <Route path="/greenBook/economy" element= {<EconomyPage language = {language}/>}/>
                                 <Route path= "/consultation/durableAgriculture" element= {<AgricultureConsultation language = {language} />}/>
                                 <Route path= "/consultation/greenEconomy" element= {<GreenEconomyConsultation language = {language} />}/>
-                                <Route path= "/consultation/circularEconomy" element= {<AgricultureConsultation language = {language} />}/>
+                                <Route path= "/consultation/numericalEconomy" element= {<NumericalEconomyConsultation language = {language} />}/>
                                 
                             </Routes>
                         </div>
