@@ -49,8 +49,8 @@ function AboutPage(props) {
                   <p className="IntroductionParagraph">{content.P2}</p>
                   <p className="IntroductionParagraph">{content.P3}</p>
                   <p className="IntroductionParagraph">{content.P4}</p>
-                  <h2>{content.T4}</h2>
-                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON2}</p></a>
+                  {/*<h2>{content.T4}</h2>
+                  <a href={content.URL} className='HomeLink'><p className='HomeButton'>{content.BUTTON2}</p></a>*/}
                   <h2>{content.T3}</h2>
                   <a href={content.URL} target= "_blank" rel='noreferrer' className='HomeLink'><p className='HomeButton'>{content.BUTTON1}</p></a>
 
