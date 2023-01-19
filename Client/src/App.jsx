@@ -14,12 +14,14 @@ import EconomyPage from "./components/EconomyPage.jsx";
 import httpService from "./services/http.service.js";
 import { Helmet } from "react-helmet";
 import languageService from "./services/language.service.js";
+import popUpService from "./services/popUp.service.js";
 import AgricultureConsultation from "./components/AgricultureConsultation.jsx";
 import GreenEconomyConsultation from "./components/greenEconomy.jsx";
 import NumericalEconomyConsultation from "./components/NumericalEconomyConsultation.jsx";
 const App = () => {
     
     const checkForLanguage = () => {
+        checkForAdSeen()
         if(languageService && languageService.findUserLanguage()){
             return languageService.findUserLanguage().toUpperCase();
         }
@@ -27,7 +29,15 @@ const App = () => {
             return 'FR';
         }
     }
+
+    const checkForAdSeen = () =>{
+        if (adSeen === false){
+            popUpService.popupFunc();
+            setAd(true)
+        }
+    }
     
+    const [adSeen, setAd ] = useState(false);
     const [language, setLanguage] = useState(checkForLanguage());
     /*const [validIP, setIP] = useState(false);
     const [isLoading, setLoad] = useState(true);*/
@@ -45,14 +55,17 @@ const App = () => {
             TITLE: "Outaouais Vert et Prospere",
         }
       }
+    
 
     useEffect( () => {
-
         async function setIP(){
          await httpService.getIp();
         }
         setIP();
       }, []);
+
+    
+    
 
 
     const switchLanguage = () =>{
