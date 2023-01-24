@@ -1,5 +1,5 @@
 const HTTPInterface = {
-    SERVER_URL: 'https://pontiac-vert-serveur.herokuapp.com/api',
+    SERVER_URL: 'https://us-central1-coherent-ascent-375700.cloudfunctions.net/function-1/api',
   
     async GET(endpoint) {
       const response = await fetch(`${this.SERVER_URL}/${endpoint}`);

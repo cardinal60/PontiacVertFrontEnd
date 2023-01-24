@@ -2,12 +2,14 @@ import ImageBanner from "./ImageBanner"
 import httpService from "../services/http.service"
 import { useState, useEffect } from "react"
 import ConsultationBox from "./ConsultationBox";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";;
+
 
 function ConsultationsPage(props) {
 
     const [consultations, setConsultations] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+
 
 
     useEffect( () => {

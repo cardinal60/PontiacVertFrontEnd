@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 
 function Footer(props) {
+
     let content = {
         EN: {
          LINK1: "Home",
